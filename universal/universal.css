@@ -1,0 +1,66 @@
+html, body {
+ height: 100%;
+}
+p {
+ font-family: 'Times New Roman', Times, serif;
+ display: inline-block;
+ margin-left: 5px;
+}
+a {
+ font-family: 'Times New Roman', Times, serif;
+ display: inline-block;
+ margin-left: 5px;
+}
+.header {
+ display: block;
+ margin: 5px;
+}
+.subheader {
+ display: block;
+ margin: 5px;
+ margin-bottom: 15px;
+}
+.side-bar {
+ display: inline-block;
+ border-width: 2px;
+ border-style: solid;
+ border-color: black;
+}
+.logo {
+ object-fit: contain;
+ width: 116px;
+}
+.navigation-title {
+ margin-bottom: 5px;
+}
+.navigation-items {
+ display: block;
+ width: 100px;
+}
+.home {
+ background-color: green;
+ color: white;
+ margin: 5px;
+}
+.gallery {
+ background-color: red;
+ color: white;
+ margin: 5px;
+}
+.launch {
+ background-color: blue;
+ color: white;
+ margin: 5px;
+}
+.social-title {
+ margin-bottom: 5px;
+}
+.social-items {
+ display: block;
+ width: 100px;
+}
+.tweet {
+ background-color: black;
+ color: white;
+ margin: 5px;
+}

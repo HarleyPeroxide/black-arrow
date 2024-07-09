@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Gallery</title>
+
+    <link rel="stylesheet" href="universal/universal.css">
+
+    <script>
+      console.log('test');
+    </script>
+
+    <style>
+      .imageItem {
+        display: inline-block;
+        width: 270px;
+      }
+      .image-content {
+        width: 256px;
+        height: 256px;
+        object-fit: contain;
+        border-width: 2px;
+        border-style: solid;
+        border-color: green;
+        margin: 5px;
+        }
+      .image-source {
+        display: inline-block;
+        margin-left: 5px;
+      }
+      .image-description {
+        display: block;
+        margin-left: 5px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+      }
+      .search-group {
+        display: inline-block;
+        width: 264px;
+        margin-bottom: 64px;
+      }
+      .search-bar {
+        display: inline-block;
+        border-radius: 0px;
+        outline: none;
+        margin: 10px;
+      }
+      .gallery-content {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 340px;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+
+  </head>
+  <body style="
+  display: grid;
+  grid-template-columns: 120px 100%">
+
+    <div class="side-bar">
+      <img class="logo" src="assets\logo.png">
+      <p class="navigation-title">navigation</p>
+      <div class="navigation-items">
+        <button class="home" onclick="location.href = 'woomera.html';">HOME</button>
+        <button class="launch"  onclick="location.href = 'launch.html';">LAUNCHES</button>
+        <button class="gallery"  onclick="location.href = 'gallery.html';">GALLERY</button>
+      </div>
+      <p class="social-title">social</p>
+      <div class="social-items">
+        <form>
+          <button class="tweet" type="submit" formaction="https://x.com/lowtestperoxide" formtarget="_blank">TWITTER</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="main-body">
+      <div>
+        <h1 class="header">Gallery</h1>
+        <h2 class="subheader">Open images in a new tab for full size view</h2>
+      </div>
+
+      <form class="search-group">
+
+        <input class="search-bar" type="text" id="userInput" onkeyup="searchFunction()" placeholder="search">
+
+        <script id="search-function">
+
+          document.querySelector('.search-group').addEventListener('submit', function(event) {
+            event.preventDefault();
+          });
+
+          function searchFunction() {
+            var input, filter, ul, li, i;
+            input = document.getElementById('userInput');
+            filter = input.value.toUpperCase().split(" ");
+            ul = document.getElementById('content')
+            li = ul.getElementsByTagName('li');
+  
+            for (i = 0; i < li.length; i++) {
+              description = li[i].getElementsByClassName('image-description')[0].innerText.toUpperCase();
+              if (filter.every(term => description.includes(term))) {
+                li[i].style.display = "";
+              } else {
+                li[i].style.display = "none";
+              }
+            }
+          }
+  
+        </script>
+
+      </form>
+
+      <ul id="content" class="gallery-content">
+
+        <li class="imageItem">
+          <img class="image-content" draggable="false" src="images/r3debris.png">
+          <p class="image-description">R3 first stage debris on display in Australia, 2007</p>
+          <a class="image-source" href="https://commons.wikimedia.org/wiki/Category:Black_Arrow_R3#" target="_blank">
+          source
+          </a>
+        </li>
+
+        <li class="imageItem">
+          <img class="image-content" draggable="false" src="images/r3pad.png">
+          <p class="image-description">Reversed image of R3 prior to launch, 1971</p>
+          <a class="image-source" href="https://arstechnica.com/science/2016/06/the-uk-should-rejoin-space-race-say-mps/" target="_blank">
+          source
+          </a>
+        </li>
+
+        <li class="imageItem">
+          <img class="image-content" draggable="false" src="images/r3launchrev.png">
+          <p class="image-description">R3 moments after launch, 1971</p>
+          <a class="image-source" href="https://x.com/ESA_History/status/1718192379151470843" target="_blank">
+          source
+          </a>
+        </li>
+
+        <li class="imageItem">
+          <img class="image-content" draggable="false" src="images/r3launch.png">
+          <p class="image-description">R3 just after launch, 1971</p>
+          <a class="image-source" href="https://www.esa.int/Science_Exploration/Space_Science/28_October" target="_blank">
+          source
+          </a>
+        </li>
+
+        <li class="imageItem">
+          <img class="image-content" draggable="false" src="images/skyroradebris.png">
+          <p class="image-description">R2 first stage debris on display in Farnborough from the side, 2020</p>
+          <a class="image-source" href="https://airsciences.org.uk/temporary-exhibits/" target="_blank">
+          source
+          </a>
+        </li>
+
+        <li class="imageItem">
+          <img class="image-content" draggable="false" src="images/skyroradebrisfar.png">
+          <p class="image-description">R2 first stage debris on display in Farnborough from a distance, 2020</p>
+          <a class="image-source" href="https://airsciences.org.uk/temporary-exhibits/" target="_blank">
+          source
+          </a>
+        </li>
+
+        <li class="imageItem">
+          <img class="image-content" draggable="false" src="images/skyroradebrisclose.png">
+          <p class="image-description">R2 first stage debris on display in Farnborough from the back, 2020</p>
+          <a class="image-source" href="https://www.bbc.co.uk/news/science-environment-57758410" target="_blank">
+          source
+          </a>
+        </li>
+
+        <li class="imageItem">
+          <img class="image-content" draggable="false" src="images/r0testing.png">
+          <p class="image-description">R0 prior to a test fire at High Down, 1969(?)</p>
+          <a class="image-source" href="https://www.nasaspaceflight.com/2021/10/50th-anniversary-black-arrow/" target="_blank">
+          source
+          </a>
+        </li>
+
+        <li class="imageItem">
+          <img class="image-content" draggable="false" src="images/debrisreturnlorry.png">
+          <p class="image-description">R3 first stage debris in a lorry, 2019</p>
+          <a class="image-source" href="https://www.smithsonianmag.com/air-space-magazine/return-black-arrow-180972959/" target="_blank">
+          source
+          </a>
+        </li>
+
+        <li class="imageItem">
+          <img class="image-content" draggable="false" src="images/debrisreturnoutside.png">
+          <p class="image-description">R2 first stage debris outside the Scottish Parliament, 2019</p>
+          <a class="image-source" href="https://www.smithsonianmag.com/air-space-magazine/return-black-arrow-180972959/" target="_blank">
+          source
+          </a>
+        </li>
+
+        <li class="imageItem">
+          <img class="image-content" draggable="false" src="images/r2aus.png">
+          <p class="image-description">R2 moments after launch, 1970</p>
+          <a class="image-source" href="https://x.com/AusSpaceAgency/status/1235011772651671552" target="_blank">
+          source
+          </a>
+        </li>
+
+        <li class="imageItem">
+          <img class="image-content" draggable="false" src="images/debrisreturn.png">
+          <p class="image-description">R3 exiting a lorry in Scotland, 2019</p>
+          <a class="image-source" href="https://eandt.theiet.org/2019/01/21/uks-first-rocket-returning-home-after-48-years" target="_blank">
+          source
+          </a>
+        </li>
+
+        <li class="imageItem">
+          <img class="image-content" draggable="false" src="images/debrisreturnclose.png">
+          <p class="image-description">Close view of the flattened engines on R3 first stage debris, 2019</p>
+          <a class="image-source" href="https://eandt.theiet.org/2019/01/21/uks-first-rocket-returning-home-after-48-years" target="_blank">
+          source
+          </a>
+        </li>
+
+        <li class="imageItem">
+          <img class="image-content" draggable="false" src="images/debriswarehouse.png">
+          <p class="image-description">R2(?) debris leaving a warehouse in Edinburgh, 2020</p>
+          <a class="image-source" href="https://x.com/BishopsMove_/status/1222822465094725632" target="_blank">
+          source
+          </a>
+        </li>
+
+        <li class="imageItem">
+          <img class="image-content" draggable="false" src="images/r2launch.png">
+          <p class="image-description">R2 just after launch, 1970</p>
+          <a class="image-source" href="https://www.reddit.com/r/HistoryPorn/comments/2kl7g5/the_prospero_satellite_is_launched_into_low_earth/" target="_blank">
+          source
+          </a>
+        </li>
+
+        <li class="imageItem">
+          <img class="image-content" draggable="false" src="images/r3launchnowiki.png">
+          <p class="image-description">R3 moments after launch, 1971</p>
+          <a class="image-source" href="https://humanoidhistory.tumblr.com/image/179529490765" target="_blank">
+          source
+          </a>
+        </li>
+
+
+
+
+
+
+
+
+
+      </ul>
+
+
+  </body>
+</html>
