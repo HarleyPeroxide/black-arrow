@@ -4,25 +4,26 @@
 
   <head>
 
-    <link rel="stylesheet" href="universal/universal.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blank</title>
+
+    <link rel="stylesheet" href="universal/universal.css">
 
   </head>
   
   <body style="
   display: grid;
-  grid-template-columns: 150px 100%">
+  grid-template-columns: 150px 1fr;">
   
   <div class="side-bar">
-    <img class="logo" src="assets\logotestnew.png">
-    <p class="navigation-title">navigation</p>
+    <img class="logo" draggable="false" onclick="location.href = 'index.html';" src="assets\logotestnew.png">
+    <p class="navigation-title">NAVIGATION</p>
     <div class="navigation-items">
       <button class="home" onclick="location.href = 'woomera.html';">HOME</button>
       <button class="launch"  onclick="location.href = 'launch.html';">LAUNCHES</button>
       <button class="gallery"  onclick="location.href = 'gallery.html';">GALLERY</button>
     </div>
-    <p class="social-title">social</p>
+    <p class="social-title">SOCIAL</p>
     <div class="social-items">
       <form>
         <button class="tweet" type="submit" formaction="https://x.com/lowtestperoxide" formtarget="_blank">TWITTER</button>
