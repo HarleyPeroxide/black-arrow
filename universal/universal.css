@@ -89,3 +89,12 @@ button {
  margin: 5px;
  width: 96px;
 }
+.figure {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #b4202a;
+  display: inline-block;
+}
+.note {
+  font-size: 90%;
+}
