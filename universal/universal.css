@@ -5,6 +5,7 @@ html, body {
 }
 p {
  display: inline-block;
+ margin-left: 5px;
 }
 a {
  display: inline-block;
@@ -43,8 +44,9 @@ button {
  margin: 5px;
 }
 .navigation-title {
- display: block;
  margin-bottom: 5px;
+ margin-left: 0px;
+ display: block;
  font-size: small;
  text-align: center;
 }
@@ -60,20 +62,27 @@ button {
  margin: 5px;
  width: 96px;
 }
-.gallery {
- background-color: #b4202a;
- color: white;
- margin: 5px;
- width: 96px;
-}
 .launch {
  background-color: #b4202a;
  color: white;
  margin: 5px;
  width: 96px;
 }
+.payload {
+ background-color: #b4202a;
+ color: white;
+ margin: 5px;
+ width: 96px;
+}
+.gallery {
+  background-color: #b4202a;
+  color: white;
+  margin: 5px;
+  width: 96px;
+ }
 .social-title {
  margin-bottom: 5px;
+ margin-left: 0px;
  display: block;
  font-size: small;
  text-align: center;
@@ -89,6 +98,25 @@ button {
  color: white;
  margin: 5px;
  width: 96px;
+}
+.year-actual{
+ display: inline;
+ position: absolute;
+ font-size: 75%;
+ margin: 10px;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ top: 1;
+}
+.year-sidebar{
+ display: inline-block;
+ position: relative;
+ text-align: center;
+ margin-top: 100px;
+ margin-bottom: 0px;
+ height: 40px;
+ width: 80px;
 }
 .figure {
  border-width: 2px;

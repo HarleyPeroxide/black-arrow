@@ -80,21 +80,25 @@
   display: grid;
   grid-template-columns: 150px 1fr;">
 
-    <div class="side-bar">
-        <img class="logo" draggable="false" onclick="location.href = 'index.html';" src="assets\logotestnew.png">
-      <p class="navigation-title">NAVIGATION</p>
-      <div class="navigation-items">
-        <button class="home" onclick="location.href = 'index.html';">HOME</button>
-        <button class="launch"  onclick="location.href = 'launch.html';">LAUNCHES</button>
-        <button class="gallery"  onclick="location.href = 'gallery.html';">GALLERY</button>
-      </div>
-      <p class="social-title">SOCIAL</p>
-      <div class="social-items">
-        <form>
-          <button class="tweet" type="submit" formaction="https://x.com/lowtestperoxide" formtarget="_blank">TWITTER</button>
-        </form>
-      </div>
+  <div class="side-bar">
+    <img class="logo" draggable="false" onclick="location.href = 'index.html';" src="assets\logotestnew.png">
+    <p class="navigation-title">NAVIGATION</p>
+    <div class="navigation-items">
+      <button class="home" onclick="location.href = 'index.html';">HOME</button>
+      <button class="launch"  onclick="location.href = 'launch.html';">LAUNCHES</button>
+      <button class="payload"  onclick="location.href = 'payload.html';">PAYLOADS</button>
+      <button class="gallery"  onclick="location.href = 'gallery.html';">GALLERY</button>
     </div>
+    <p class="social-title">SOCIAL</p>
+    <div class="social-items">
+      <form>
+        <button class="tweet" type="submit" formaction="https://x.com/lowtestperoxide" formtarget="_blank">TWITTER</button>
+      </form>
+    </div>
+    <div class="year-sidebar">
+      <p class="year-actual">2024</p>
+    </div>
+  </div>
 
     <div></div>
 
@@ -102,10 +106,10 @@
       <div>
         <h1>Gallery</h1>
         <h2>Click on the images to open them in a new tab for full size viewing</h2>
-        <h4>Please contact me if you find an error, or own any of the images and want them to be removed</h3>
-        <p style="display: block;">This gallary contains relevant images to the archive, as well as each of the images used across the website</p>
-        <p style="display: block;">The sources linked are the clearest and earliest occurance of each image that I could find</p>
-        <p style="display: block;">Information directly followed by (?) indicates that I am uncertain about it</p>
+        <h4 style="margin-top: 0px; margin-bottom: 0px;">Please contact me if you find an error, or own any of the images and want them to be removed</h3>
+        <p style="display: block; margin-top: 5px; margin-bottom: 0px;">This gallary contains relevant images to the archive, as well as each of the images used across the website</p>
+        <p style="display: block; margin-top: 5px; margin-bottom: 0px;">The sources linked are the clearest and earliest occurance of each image that I could find</p>
+        <p style="display: block; margin-top: 5px; margin-bottom: 0px;">Information directly followed by (?) indicates that I am uncertain about it</p>
       </div>
 
       <form class="search-group">
@@ -165,8 +169,8 @@
           <a class="image-link" href="images/r3launch.png" target="_blank">
             <img class="image-content" draggable="false" src="images/r3launch.png"></a>
           <div class="image-textbox">
-          <p class="image-description">R3 just after launch, 1971</p>
-          <a class="image-source" href="https://www.esa.int/Science_Exploration/Space_Science/28_October" target="_blank">
+            <p class="image-description">R3 moments after launch, 1971</p>
+            <a class="image-source" href="https://www.esa.int/Science_Exploration/Space_Science/28_October" target="_blank">
           source</a>
           </div>
         </li>
@@ -175,8 +179,8 @@
           <a class="image-link" href="images/skyroradebris.png" target="_blank">
             <img class="image-content" draggable="false" src="images/skyroradebris.png"></a>
           <div class="image-textbox">
-          <p class="image-description">R2 first stage debris on display in Farnborough from the side, 2020</p>
-          <a class="image-source" href="https://airsciences.org.uk/temporary-exhibits/" target="_blank">
+            <p class="image-description">R2 first stage debris on display in Farnborough from the side, 2020</p>
+            <a class="image-source" href="https://airsciences.org.uk/temporary-exhibits/" target="_blank">
           source</a>
           </div>
         </li>
@@ -185,8 +189,8 @@
           <a class="image-link" href="images/skyroradebrisfar.png" target="_blank">
             <img class="image-content" draggable="false" src="images/skyroradebrisfar.png"></a>
           <div class="image-textbox">
-          <p class="image-description">R2 first stage debris on display in Farnborough from a distance, 2020</p>
-          <a class="image-source" href="https://airsciences.org.uk/temporary-exhibits/" target="_blank">
+            <p class="image-description">R2 first stage debris on display in Farnborough from a distance, 2020</p>
+            <a class="image-source" href="https://airsciences.org.uk/temporary-exhibits/" target="_blank">
           source</a>
           </div>
         </li>
@@ -195,8 +199,8 @@
           <a class="image-link" href="images/skyroradebrisclose.png" target="_blank">
             <img class="image-content" draggable="false" src="images/skyroradebrisclose.png"></a>
           <div class="image-textbox">
-          <p class="image-description">R2 first stage debris on display in Farnborough from the back, 2020</p>
-          <a class="image-source" href="https://www.bbc.co.uk/news/science-environment-57758410" target="_blank">
+            <p class="image-description">R2 first stage debris on display in Farnborough from the back, 2020</p>
+            <a class="image-source" href="https://www.bbc.co.uk/news/science-environment-57758410" target="_blank">
           source</a>
           </div> 
         </li>
@@ -205,8 +209,8 @@
           <a class="image-link" href="images/r0testing.png" target="_blank">
             <img class="image-content" draggable="false" src="images/r0testing.png"></a>
           <div class="image-textbox">
-          <p class="image-description">R0 prior to a test fire at High Down, 1969(?)</p>
-          <a class="image-source" href="https://journal.sciencemuseum.ac.uk/article/black-arrow-r4-the-object-behind-the-screen/#text-2" target="_blank">
+            <p class="image-description">R0 prior to a test fire at High Down, 1969(?)</p>
+            <a class="image-source" href="https://journal.sciencemuseum.ac.uk/article/black-arrow-r4-the-object-behind-the-screen/#text-2" target="_blank">
           source</a>
           </div>
         </li>
@@ -215,8 +219,8 @@
           <a class="image-link" href="images/debrisreturnlorry.png" target="_blank">
             <img class="image-content" draggable="false" src="images/debrisreturnlorry.png"></a>
           <div class="image-textbox">
-          <p class="image-description">R3 first stage debris in a lorry, 2019</p>
-          <a class="image-source" href="https://www.smithsonianmag.com/air-space-magazine/return-black-arrow-180972959/" target="_blank">
+            <p class="image-description">R3 first stage debris in a lorry, 2019</p>
+            <a class="image-source" href="https://www.smithsonianmag.com/air-space-magazine/return-black-arrow-180972959/" target="_blank">
           source</a>
           </div>
         </li>
@@ -225,8 +229,8 @@
           <a class="image-link" href="images/debrisreturnoutside.png" target="_blank">
             <img class="image-content" draggable="false" src="images/debrisreturnoutside.png"></a>
           <div class="image-textbox">
-          <p class="image-description">R2 first stage debris outside the Scottish Parliament, 2019</p>
-          <a class="image-source" href="https://www.smithsonianmag.com/air-space-magazine/return-black-arrow-180972959/" target="_blank">
+            <p class="image-description">R2 first stage debris outside the Scottish Parliament, 2019</p>
+            <a class="image-source" href="https://www.smithsonianmag.com/air-space-magazine/return-black-arrow-180972959/" target="_blank">
           source</a>
           </div>
         </li>
@@ -235,8 +239,8 @@
           <a class="image-link" href="images/r2aus.png" target="_blank">
             <img class="image-content" draggable="false" src="images/r2aus.png"></a>
           <div class="image-textbox">
-          <p class="image-description">R2 moments after launch, 1970</p>
-          <a class="image-source" href="https://x.com/AusSpaceAgency/status/1235011772651671552" target="_blank">
+            <p class="image-description">R2 moments after launch, 1970</p>
+            <a class="image-source" href="https://x.com/AusSpaceAgency/status/1235011772651671552" target="_blank">
           source</a>
           </div>
         </li>
@@ -245,8 +249,8 @@
           <a class="image-link" href="images/debrisreturn.png" target="_blank">
             <img class="image-content" draggable="false" src="images/debrisreturn.png"></a>
           <div class="image-textbox">
-          <p class="image-description">R3 debris being moved in Scotland, 2019</p>
-          <a class="image-source" href="https://eandt.theiet.org/2019/01/21/uks-first-rocket-returning-home-after-48-years" target="_blank">
+            <p class="image-description">R3 debris being moved in Scotland, 2019</p>
+            <a class="image-source" href="https://eandt.theiet.org/2019/01/21/uks-first-rocket-returning-home-after-48-years" target="_blank">
           source</a>
           </div>
         </li>
@@ -255,8 +259,8 @@
           <a class="image-link" href="images/debrisreturnclose.png" target="_blank">
             <img class="image-content" draggable="false" src="images/debrisreturnclose.png"></a>
           <div class="image-textbox">
-          <p class="image-description">Close view of the flattened engines on R3 first stage debris, 2019</p>
-          <a class="image-source" href="https://eandt.theiet.org/2019/01/21/uks-first-rocket-returning-home-after-48-years" target="_blank">
+            <p class="image-description">Close view of the flattened engines on R3 first stage debris, 2019</p>
+            <a class="image-source" href="https://eandt.theiet.org/2019/01/21/uks-first-rocket-returning-home-after-48-years" target="_blank">
           source</a>
           </div>
         </li>
@@ -265,8 +269,8 @@
           <a class="image-link" href="images/r3debris.png" target="_blank">
             <img class="image-content" draggable="false" src="images/r3debris.png"></a>
           <div class="image-textbox">
-          <p class="image-description">R3 first stage debris on display in Australia, 2007</p>
-          <a class="image-source" href="https://commons.wikimedia.org/wiki/Category:Black_Arrow_R3#" target="_blank">
+            <p class="image-description">R3 first stage debris on display in Australia, 2007</p>
+            <a class="image-source" href="https://commons.wikimedia.org/wiki/Category:Black_Arrow_R3#" target="_blank">
           source</a>
           </div>
         </li>
@@ -275,8 +279,8 @@
           <a class="image-link" href="images/debriswarehouse.png" target="_blank">
             <img class="image-content" draggable="false" src="images/debriswarehouse.png"></a>
           <div class="image-textbox">
-          <p class="image-description">R2(?) debris leaving a warehouse in Edinburgh, 2020</p>
-          <a class="image-source" href="https://x.com/BishopsMove_/status/1222822465094725632" target="_blank">
+            <p class="image-description">R2(?) debris leaving a warehouse in Edinburgh, 2020</p>
+            <a class="image-source" href="https://x.com/BishopsMove_/status/1222822465094725632" target="_blank">
           source</a>
           </div>
         </li>
@@ -285,8 +289,8 @@
           <a class="image-link" href="images/r2launch.png" target="_blank">
             <img class="image-content" draggable="false" src="images/r2launch.png"></a>
           <div class="image-textbox">
-          <p class="image-description">R2 just after launch, 1970</p>
-          <a class="image-source" href="https://www.reddit.com/r/HistoryPorn/comments/2kl7g5/the_prospero_satellite_is_launched_into_low_earth/" target="_blank">
+            <p class="image-description">R2 moments after launch, 1970</p>
+            <a class="image-source" href="https://www.reddit.com/r/HistoryPorn/comments/2kl7g5/the_prospero_satellite_is_launched_into_low_earth/" target="_blank">
           source</a>
           </div>
         </li>
@@ -295,8 +299,8 @@
           <a class="image-link" href="images/r3launchnowiki.png" target="_blank">
             <img class="image-content" draggable="false" src="images/r3launchnowiki.png"></a>
           <div class="image-textbox">  
-          <p class="image-description">R3 moments after launch, 1971</p>
-          <a class="image-source" href="https://humanoidhistory.tumblr.com/image/179529490765" target="_blank">
+            <p class="image-description">R3 moments after launch, 1971</p>
+            <a class="image-source" href="https://humanoidhistory.tumblr.com/image/179529490765" target="_blank">
           source</a>
           </div>
         </li>
@@ -305,8 +309,8 @@
           <a class="image-link" href="images/r3modelmuseum.png" target="_blank">
             <img class="image-content" draggable="false" src="images/r3modelmuseum.png"></a>
           <div class="image-textbox">  
-          <p class="image-description">R3 replica at the Wight Aviation Museum, 2021</p>
-          <a class="image-source" href="https://onthewight.com/wight-aviation-museum-hear-the-real-stories-of-isle-of-wight-aviators-at-grand-opening/" target="_blank">
+            <p class="image-description">R3 replica at the Wight Aviation Museum, 2021</p>
+            <a class="image-source" href="https://onthewight.com/wight-aviation-museum-hear-the-real-stories-of-isle-of-wight-aviators-at-grand-opening/" target="_blank">
           source</a>
           </div>
         </li>
@@ -315,8 +319,8 @@
           <a class="image-link" href="images/r3modelbuildings.png" target="_blank">
             <img class="image-content" draggable="false" src="images/r3modelbuildings.png"></a>
           <div class="image-textbox">
-          <p class="image-description">R3 replica at the Wight Aviation Museum, 2021</p>
-          <a class="image-source" href="https://onthewight.com/replica-black-arrow-launched-at-50th-anniversary-event-watch-on-tv/" target="_blank">
+            <p class="image-description">R3 replica at the Wight Aviation Museum, 2021</p>
+            <a class="image-source" href="https://onthewight.com/replica-black-arrow-launched-at-50th-anniversary-event-watch-on-tv/" target="_blank">
           source</a>
           </div>
         </li>
@@ -325,8 +329,8 @@
           <a class="image-link" href="images/r3modelbuildings.png" target="_blank">
             <img class="image-content" draggable="false" src="images/r3modelpeople.png"></a>
           <div class="image-textbox">
-          <p class="image-description">R3 replica at the Wight Aviation Museum, 2021</p>
-          <a class="image-source" href="https://onthewight.com/replica-black-arrow-launched-at-50th-anniversary-event-watch-on-tv/" target="_blank">
+            <p class="image-description">R3 replica at the Wight Aviation Museum, 2021</p>
+            <a class="image-source" href="https://onthewight.com/replica-black-arrow-launched-at-50th-anniversary-event-watch-on-tv/" target="_blank">
           source</a>
           </div>
         </li>
@@ -335,8 +339,8 @@
           <a class="image-link" href="images/r3launchclear.png" target="_blank">
             <img class="image-content" draggable="false" src="images/r3launchclear.png"></a>
           <div class="image-textbox">  
-          <p class="image-description">R3 seconds after launch, 1971</p>
-          <a class="image-source" href="https://journal.sciencemuseum.ac.uk/article/black-arrow-r4-the-object-behind-the-screen/#text-2" target="_blank">
+            <p class="image-description">R3 moments after launch, 1971</p>
+            <a class="image-source" href="https://journal.sciencemuseum.ac.uk/article/black-arrow-r4-the-object-behind-the-screen/#text-2" target="_blank">
           source</a>
           </div>
         </li>
@@ -345,8 +349,8 @@
           <a class="image-link" href="images/r0launch.png" target="_blank">
             <img class="image-content" draggable="false" src="images/r0launch.png"></a>
           <div class="image-textbox">  
-          <p class="image-description">R0 moments after launch, 1969</p>
-          <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/espace_europeen/black_arrow.htm" target="_blank">
+            <p class="image-description">R0 moments after launch, 1969</p>
+            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/espace_europeen/black_arrow.htm" target="_blank">
           source</a>
           </div>
         </li>
@@ -355,8 +359,8 @@
           <a class="image-link" href="images/r2padnofairing.png" target="_blank">
             <img class="image-content" draggable="false" src="images/r2padnofairing.png"></a>
           <div class="image-textbox">  
-          <p class="image-description">R2 on the pad without the fairing, 1970</p>
-          <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/espace_europeen/black_arrow.htm" target="_blank">
+            <p class="image-description">R2 on the pad without the fairing, 1970</p>
+            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/espace_europeen/black_arrow.htm" target="_blank">
           source</a>
           </div>
         </li>
@@ -365,8 +369,8 @@
           <a class="image-link" href="images/r3padnofairing.png" target="_blank">
             <img class="image-content" draggable="false" src="images/r3padnofairing.png"></a>
           <div class="image-textbox">  
-          <p class="image-description">R3 on the pad without the fairing, 1971</p>
-          <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/espace_europeen/black_arrow.htm" target="_blank">
+            <p class="image-description">R3 on the pad without the fairing, 1971</p>
+            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/espace_europeen/black_arrow.htm" target="_blank">
           source</a>
           </div>
         </li>
@@ -375,8 +379,8 @@
           <a class="image-link" href="images/r1launchsmall.png" target="_blank">
             <img class="image-content" draggable="false" src="images/r1launchsmall.png"></a>
           <div class="image-textbox">
-          <p class="image-description">R1 moments after launch, 1970</p>
-          <a class="image-source" href="https://aventure-des-fusees-europa.blog4ever.com/articles/chronologie-de-la-cooperation-spatiale-europeenne" target="_blank">
+            <p class="image-description">R1 moments after launch, 1970</p>
+            <a class="image-source" href="https://aventure-des-fusees-europa.blog4ever.com/articles/chronologie-de-la-cooperation-spatiale-europeenne" target="_blank">
           source</a>
           </div>
         </li>
@@ -385,8 +389,8 @@
           <a class="image-link" href="images/r3modelsky.png" target="_blank">
             <img class="image-content" draggable="false" src="images/r3modelsky.png"></a>
           <div class="image-textbox">
-          <p class="image-description">R3 replica at the Wight Aviation Museum, 2023</p>
-          <a class="image-source" href="https://x.com/BSF42069/status/1831065312466460898/photo/2" target="_blank">
+            <p class="image-description">R3 replica at the Wight Aviation Museum, 2023</p>
+            <a class="image-source" href="https://x.com/BSF42069/status/1831065312466460898/photo/2" target="_blank">
           source</a>
           </div>
         </li>
@@ -395,8 +399,8 @@
           <a class="image-link" href="images/r3modelbest.png" target="_blank">
             <img class="image-content" draggable="false" src="images/r3modelbest.png"></a>
           <div class="image-textbox">  
-          <p class="image-description">R3 replica at the Wight Aviation Museum, 2023</p>
-          <a class="image-source" href="https://x.com/BSF42069/status/1831071668015694291/photo/3" target="_blank">
+            <p class="image-description">R3 replica at the Wight Aviation Museum, 2023</p>
+            <a class="image-source" href="https://x.com/BSF42069/status/1831071668015694291/photo/3" target="_blank">
           source</a>
           </div>
         </li>
@@ -405,8 +409,8 @@
           <a class="image-link" href="images/r3modelskirt.png" target="_blank">
             <img class="image-content" draggable="false" src="images/r3modelskirt.png"></a>
           <div class="image-textbox">
-          <p class="image-description">R3 replica's engine bay, 2023</p>
-          <a class="image-source" href="https://x.com/BSF42069/status/1831071668015694291/photo/2" target="_blank">
+            <p class="image-description">R3 replica's engine bay, 2023</p>
+            <a class="image-source" href="https://x.com/BSF42069/status/1831071668015694291/photo/2" target="_blank">
           source</a>
           </div>
         </li>
@@ -415,8 +419,8 @@
           <a class="image-link" href="images/bamodelwoomera.png" target="_blank">
             <img class="image-content" draggable="false" src="images/bamodelwoomera.png"></a>
           <div class="image-textbox">
-          <p class="image-description">Black Arrow replica in Woomera, 2003</p>
-          <a class="image-source" href="https://www.flickr.com/photos/artq55/150021646/" target="_blank">
+            <p class="image-description">Black Arrow replica in Woomera, 2003</p>
+            <a class="image-source" href="https://www.flickr.com/photos/artq55/150021646/" target="_blank">
           source</a>
           </div>
         </li>
@@ -425,8 +429,8 @@
           <a class="image-link" href="images/bamodelwoomerafull.png" target="_blank">
             <img class="image-content" draggable="false" src="images/bamodelwoomerafull.png"></a>
           <div class="image-textbox">
-          <p class="image-description">Black Arrow replica in Woomera, 2017</p>
-          <a class="image-source" href="https://www.flickr.com/photos/paulroberts/37551410685/in/album-72157688978822504" target="_blank">
+            <p class="image-description">Black Arrow replica in Woomera, 2017</p>
+            <a class="image-source" href="https://www.flickr.com/photos/paulroberts/37551410685/in/album-72157688978822504" target="_blank">
           source</a>
           </div>
         </li>
@@ -435,8 +439,8 @@
           <a class="image-link" href="images/figure/launcharea5.png" target="_blank">
             <img class="image-content" draggable="false" src="images/figure/launcharea5.png"></a>
           <div class="image-textbox">  
-          <p class="image-description">Launch Area 5 at the Woomera Test Range, 1967(?)</p>
-          <a class="image-source" href="https://www.dst.defence.gov.au/sites/default/files/publications/documents/Fire%20Across%20the%20Desert%20HR.pdf" target="_blank">
+            <p class="image-description">Launch Area 5 at the Woomera Test Range, 1967(?)</p>
+            <a class="image-source" href="https://www.dst.defence.gov.au/sites/default/files/publications/documents/Fire%20Across%20the%20Desert%20HR.pdf" target="_blank">
           source</a>
           </div>
         </li>
