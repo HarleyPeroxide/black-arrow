@@ -2,10 +2,12 @@ html, body {
  height: 100%;
  background-color: #f3eddc;
  font-family: Arial, sans-serif;
+ margin: 1px;
 }
 p {
  display: inline-block;
  margin-left: 5px;
+ margin-right: 5px;
 }
 a {
  display: inline-block;
@@ -26,22 +28,47 @@ h3 {
  margin-top: 25px;
  margin-bottom: -5px;
 }
+sup {
+ font-size: 75%;
+ color: purple;
+}
 button {
  display: block;
+}
+.source-list {
+ font-size: 75%;
+ display: block;
+ text-align: left;
+ margin-top: 10px;
+ margin-bottom: 20px;
+ border-top-color: black;
+ border-top-style: solid;
+ border-top-width: 1px;
+ display: grid;
+ text-align: left;
+ width: 1100px;
+ grid-auto-flow: column;
+ grid-template-rows: 40px 40px;
 }
 .side-bar {
  background-color: #e7dcbf;
  position: fixed;
  width: 136px;
- margin-top: 10px;
+ height: 100%;
+ margin: 0px;
+ top: 0px;
+ left: 0px;
  display: flex;
  flex-direction: column;
- justify-content: center;
  align-items: center;
+ border-right-color: black;
+ border-right-width: 1px;
+ border-right-style: solid;
 }
 .logo {
  width: 116px;
  margin: 5px;
+ margin-top: 10px;
 }
 .navigation-title {
  margin-bottom: 5px;
@@ -99,6 +126,12 @@ button {
  margin: 5px;
  width: 96px;
 }
+.bsky {
+  background-color: darkcyan;
+  color: white;
+  margin: 5px;
+  width: 96px;
+ }
 .year-actual{
  display: inline;
  position: absolute;
@@ -113,10 +146,9 @@ button {
  display: inline-block;
  position: relative;
  text-align: center;
- margin-top: 100px;
- margin-bottom: 0px;
  height: 40px;
  width: 80px;
+ bottom: -65%;
 }
 .figure {
  border-width: 2px;

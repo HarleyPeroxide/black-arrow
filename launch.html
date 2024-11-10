@@ -10,11 +10,6 @@
     <link rel="stylesheet" href="universal/universal.css">
 
     <style>
-      .information {
-        display: flex;
-        align-items: flex-start;
-      }
-
     </style>
 
   </head>
@@ -30,12 +25,14 @@
       <button class="home" onclick="location.href = 'index.html';">HOME</button>
       <button class="launch"  onclick="location.href = 'launch.html';">LAUNCHES</button>
       <button class="payload"  onclick="location.href = 'payload.html';">PAYLOADS</button>
+      <button class="gallery"  onclick="location.href = 'vehicle.html';">VEHICLE</button>
       <button class="gallery"  onclick="location.href = 'gallery.html';">GALLERY</button>
     </div>
     <p class="social-title">SOCIAL</p>
     <div class="social-items">
       <form>
         <button class="tweet" type="submit" formaction="https://x.com/lowtestperoxide" formtarget="_blank">TWITTER</button>
+        <button class="bsky" type="submit" formaction="https://bsky.app/profile/lowtestperoxide.bsky.social" formtarget="_blank">BLUESKY</button>
       </form>
     </div>
     <div class="year-sidebar">
@@ -43,32 +40,33 @@
     </div>
   </div>
 
+
   <div></div>
 
-  <div class="main-body">   
+  <div class="main-body" style="text-align: justify;">   
     <h1>Launches</h1>
     <h2 style="margin-bottom: 0px;">Read about each launch</h2>
 
-    <div class="introduction">
+    <div class="introduction" style="max-width: 1100px; min-width: 200px;">
       <p style="margin-top: 8px;">This page contains a brief summary of each launch. I plan to implement dedicated pages for each flight in the near future.</p>
     </div>
 
-    <div class="information" style="width: 1100px;">
+    <div class="information" style="max-width: 1100px; min-width: 728px; display: flex;">
       <div id="text">
         <h3>First launch - R0 - Failure</h3>
-        <p>The first launch occurred on the 28th of June 1969 at 08:20 UTC+9:30h. It was a suborbital test flight of the first and second stages. The third stage was present but inert. It carried a cylindrical dummy payload and lacked the signature red-orange paint on the fairings. Immediately after launch, the rocket began to quickly oscillate back and forth. Roughly a minute into flight, the fairing broke away and the payload was ripped from the vehicle. The engine on the first stage then seized to function. The unpowered rocket tumbled as it fell. The vehicle was then remotely destroyed at an altitude of about 3km. The flight data sent over radio from the vehicle indicated that one of the four Gamma 8 engine pairs had been repeatedly moving between its maximum and minimum range.
+        <p>The first launch occurred on the 28th of June 1969 at 08:20 UTC+9:30h.<sup>[1]</sup> It was a suborbital test flight of the first and second stages. The third stage was present but inert. It carried a cylindrical dummy payload and lacked the signature red-orange paint on the fairings. Immediately after launch, the rocket began to quickly oscillate back and forth. Roughly a minute into flight, the fairing broke away and the payload was ripped from the vehicle.<sup>[2]</sup> The engine on the first stage then seized to function. The unpowered rocket tumbled as it fell. The vehicle was then remotely destroyed at an altitude of about 3km.<sup>[3]</sup> The flight data sent over radio from the vehicle indicated that one of the four Gamma 8 engine pairs had been repeatedly moving between its maximum and minimum range.<sup>[4]</sup>
         </p>
 
         <h3>Second launch - R1 - Success</h3>
-        <p>The second launch occurred on the 4th of March 1970 at 06:45 UTC+9:30h. It was a repeat of the previous launch, being a test flight of both the first and second stages. It was planned to launch the developmental X2 satellite. After the result of the first flight however, it was reconfigured to R0 specifications. The fairings were also painted orange to increase their visibility, which was subsequently implemented on each flight article. The vehicle went on to perform as intended.
+        <p>The second launch occurred on the 4th of March 1970 at 06:45 UTC+9:30h.<sup>[5]</sup> It was a repeat of the previous launch, being a test flight of both the first and second stages. It was planned to launch the developmental X1 satellite into orbit.<sup>[6]</sup> After the result of the first flight however, it was reconfigured to R0 specifications. The fairings were also painted orange to increase their visibility, which was subsequently implemented on each flight article. The vehicle went on to perform as intended, and crashed into the Indian Ocean.<sup>[7]</sup>
         </p>
 
         <h3>Third launch - R2 - Failure</h3>
-        <p>The third launch occurred on the 2nd of September 1970 at 10:04 UTC+9:30h. It was to be the first orbital launch attempt of the system. It carried the spherical X2 satellite, named Orba, in it's payload bay. The first stage operated perfectly, but the second stage lost thrust unexpectedly. It's engine shut down 15-30s early. One of the fairing halves had also failed to seperate from the vehicle at the correct time, eventually doing so during the ignition of the third stage. Waxwing decoupled correctly and burned as intended, but the failure of the second stage meant that orbital insertion couldn't be completed. Both Waxwing and the payload eventually splashed down in the Gulf of Carpentaria. The issue on the second stage was determined to be caused by a leak in the HTP tank perssurisation system, which meant that there was insufficient nitrogen gas to maintain the tank's operating pressure. This starved the engine of HTP, which lead to the premature shutdown of the engine
+        <p>The third launch occurred on the 2nd of September 1970 at 10:04 UTC+9:30h.<sup>[8]</sup> It was to be the first orbital launch attempt of the system. It carried the spherical X2 satellite, named Orba, in it's payload bay. The first stage operated perfectly, but the second stage lost thrust unexpectedly. It's engine shut down between 15 and 30 seconds early.<sup>[9]</sup><sup>[10]</sup> One of the fairing halves had also failed to seperate from the vehicle at the correct time, eventually doing so during the ignition of the third stage.<sup>[11]</sup> Waxwing decoupled correctly and burned as intended, but the failure of the second stage meant that orbital insertion couldn't be completed. Both Waxwing and the payload eventually splashed down in the Gulf of Carpentaria.<sup>[12]</sup> The issue on the second stage was determined to be caused by a leak in the HTP tank perssurisation system, which meant that there was insufficient nitrogen gas to maintain the tank's operating pressure. This starved the engine of HTP, which lead to the premature shutdown of the engine.<sup>[13]</sup>
         </p>
 
         <h3>Fourth launch - R3 - Success</h3>
-        <p>The fourth launch occurred on the 28th of October 1971 at 13:38 UTC+9:30h. This would be the final launch of the Black Arrow system, as the programme had been cancelled earlier in the year. This last flight was allowed to go ahead regardless because most of the stages had already arrived in Australia. It carried the X3 satellite, named Prospero, in it's payload bay. The flight went as planned, with the only notable issue being that the third stage bumped back into Prospero after seperation. This collision occured due to residual thrust from the motor, which then resulted in one of Prospero's four antennas becoming detached. The effect of this event seems to have been completely negligable.
+        <p>The fourth launch occurred on the 28th of October 1971 at 13:38 UTC+9:30h.<sup>[14]</sup> This would be the final launch of the Black Arrow system, as the programme had been cancelled earlier in the year. This last flight would to go ahead regardless, as the costs had already been incurred.<sup>[15]</sup> It carried the X3 satellite, named Prospero, in it's payload bay. The flight went as planned, although there are reports that the third stage bumped back into Prospero after seperation. This collision is said to have occured due to residual thrust from the motor, which then lead to one of Prospero's four antennas becoming detached. The effect of this event seems to have been completely negligable, if present at all.<sup>[16]</sup>
         </p>
       </div>
 
@@ -77,12 +75,26 @@
         <p class="note" style="margin-left: 50px; margin-top: 5px; width: 384px; display: block;">
           Black Arrow R3 ascending from Launch Area 5B, carrying the Prospero satellite within it's fairing.
         </p>
-        <img class="figure" style="margin-left: 50px; margin-top: 25px; vertical-align: top;" draggable="false" width="512px" src="images/launcharea5.png">
+        <img class="figure" style="margin-left: 50px; margin-top: 25px; vertical-align: top;" draggable="false" width="384px" src="images/launcharea5.png">
         <p class="note" style="margin-left: 50px; margin-top: 5px;">
-          All four launches were conducted from Launch Area 5B at the RAAF Woomera Range Complex in Australia, which can be seen on the left-hand side of the image shown above. (Fire Across the Desert, p.505)
+          All four launches were conducted from Launch Area 5B at the RAAF Woomera Range Complex in Australia, which can be seen on the left-hand side of the image shown above.
         </p>
       </div>
     </div>
+
+    <div class="source-list">
+      <p>[1] [2] Douglas Millard - The Black Arrow Rocket, p.41</p>
+      <p>[3] [4] [6] Douglas Millard - The Black Arrow Rocket, p.42</p>
+      <p>[5] Douglas Millard - The Black Arrow Rocket, p.43</p>
+      <p>[7] Peter Morton - Fire Across the Desert, p.516</p>
+      <p>[8] [9] Douglas Millard - The Black Arrow Rocket, p.44</p>
+      <p>[10] [11] Nicholas Hill - A Vertical Empire, p.309</p>
+      <p>[12] [13] Douglas Millard - The Black Arrow Rocket, p.45</p>
+      <p>[14] Douglas Millard - The Black Arrow Rocket, p.46</p>
+      <p>[15] Nicholas Hill - A Vertical Empire, p.317</p>
+      <p>[16] Peter Morton - Fire Across the Desert, p.524</p>
+    
+      </div>
   </div>
 
   </body>

@@ -5,9 +5,15 @@
   <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blank</title>
+    <title>Payloads</title>
 
     <link rel="stylesheet" href="universal/universal.css">
+
+    <style>
+      .source-list {
+      grid-template-rows: 40px 40px 40px 40px;
+      }
+    </style>
 
   </head>
   
@@ -22,12 +28,14 @@
       <button class="home" onclick="location.href = 'index.html';">HOME</button>
       <button class="launch"  onclick="location.href = 'launch.html';">LAUNCHES</button>
       <button class="payload"  onclick="location.href = 'payload.html';">PAYLOADS</button>
+      <button class="gallery"  onclick="location.href = 'vehicle.html';">VEHICLE</button>
       <button class="gallery"  onclick="location.href = 'gallery.html';">GALLERY</button>
     </div>
     <p class="social-title">SOCIAL</p>
     <div class="social-items">
       <form>
         <button class="tweet" type="submit" formaction="https://x.com/lowtestperoxide" formtarget="_blank">TWITTER</button>
+        <button class="bsky" type="submit" formaction="https://bsky.app/profile/lowtestperoxide.bsky.social" formtarget="_blank">BLUESKY</button>
       </form>
     </div>
     <div class="year-sidebar">
@@ -35,22 +43,77 @@
     </div>
   </div>
 
+
   <div></div>
 
-  <div class="main-body">   
+  <div class="main-body" style="text-align: justify;">   
     <h1>Payloads</h1>
     <h2 style="margin-bottom: 0px;">Read about the payloads</h3>
   
-    <div class="introduction">
-      <p style="margin-top: 8px;">This page will contain information about the payloads on board each flight</p>
+    <div class="introduction" style="max-width: 1100px; min-width: 200px;">
+      <p style="margin-top: 8px;">This page contains information about the payloads on board each flight. Information regarding them is quite hard to come by. There will be individual pages for each payload in the near future.</p>
     </div>
 
-    <div class="information" style="width: 1100px;"></div>
+    <div class="information" style="max-width: 1100px; min-width: 728px; display: flex;">
       <div id="text">
-        <h3>1</h3>
-        <h3>2</h3>
-        <h3>3</h3>
-        <h3>4</h3>  
+        <h3>Dummy Payload - R0</h3>
+        <p>A cylindrical dummy payload was carried on board the first Black Arrow launch.<sup>[1]</sup> This flight wasn't intented to reach orbit, so the third stage was inert. The purpose of the dummy payload would have been to represent the mass of absent elements, so that the first and second stages could be accurately tested as if they were part of a complete vehicle. It still possessed equipment however, which would have been used to verify the performance of the upper stages.<sup>[2]</sup>
+        </p>
+
+        <h3>Instrument Package - R1 and R2</h3>
+        <p>The instrument package refers to the cylindrical containers that were carried on board the second and third Black Arrow launches. The packages sat underneath the main payloads. They contained instruments to record the flight characteristics and to monitor the operation of onboard systems. In the case of R2, it would have reached orbit had the flight been successful.<sup>[3]</sup>
+        </p>
+
+        <h3>X1 Satellite - R1</h3>
+        <p>The X1 satellite was a spherical, developmental satellite made of an aluminium alloy. It was carried on board the second Black Arrow launch. It had a diameter of 76cm and a mass of 12.7kg. There was only a small transmitter and battery at its centre, with the hollow structure of the satellite functioning as an aerial.<sup>[4]</sup><sup>[5]</sup> It was intended to be the primary payload on Black Arrow's first orbital flight, before R1 was reconfigured to perform the sub-orbital test that R0 failed.<sup>[6]</sup> It was included on the flight test regardless, and sucessfully crashed into the Indian Ocean in March 1970.<sup>[7]</sup> The satellite would have been used to measure the seasonal changes in the density of the atmosphere by studying the evolution of it's orbit. The estimated duration of operation may have ranged from a month to about three years.<sup>[8]</sup><sup>[9]</sup>
+        </p>
+
+        <h3>X2 Satellite - R2</h3>
+        <P>The X2 satellite was an almost completely identical to X1, and was carried on board the third Black Arrow launch. It weighed almost a kilogram more than X1, being 13.6kg.<sup>[9]</sup> This version was certainly plated with a thin layer of gold, whereas I am uncertain about whether or not X1 had been.<sup>[10]</sup> The characteristics of the two satellites are confusingly applied quite interchangably, and destinguishing features are very difficult to determine. It was made from spare materials due to the tight budget that the programme was under.<sup>[11]</sup> X2 was also referred to as ORBA (or Orba), the name seemingly applies to both X2 and it's accompanying instrument package as one. This satellite would actually be part of an orbital attempt, launching in September 1970. It's mission was the same as to what it's predecessor had been originally intended to perform, to have it's orbit observed from Earth so that changes in seasonal atmospheric density could be determined. R2 failed to reach orbit due to a lack of performance from the second stage, and crashed into the Gulf of Carpentaria.<sup>[12]</sup>
+        </P>
+
+        <h3>X3 Satellite - R3</h3>
+        <p>The X3 satellite was a developmental satellite that was carried on board the final Black Arrow launch. It was 70cm tall and 1.1m wide. It weighed 72kg and was a flattened, angular sphere in shape.<sup>[13]</sup> The satellite was stabilised by the rotation imparted on it and Waxwing by the six Imp solid rocket motors before separation from the second stage. Its purpose was to help maintain the competitive position of the British space industry by conducting technological tests.<sup>[14]</sup> These included: the space worthiness of alternative electronic assemblies,<sup>[15]</sup> the effectiveness of experimental solar cells,<sup>[16]</sup> the effectiveness of different thermal control finishes,<sup>[17]</sup> and the measurement of micrometeoroid frequency.<sup>[18]</sup> The satellite also included typical solar cells, as well as four aerials for telemetry transmission and command acquisition.<sup>[19]</sup> It launched in October 1971, months after Britain's rocket programme had been cancelled by Westminster.<sup>[20]</sup> Originally referred to as Puck during development, the satellite was renamed Prospero after it successfully reached orbit.<sup>[21]</sup><sup>[22]</sup>
+        </p>
+
+      </div>
+
+      <div id="figure">
+        <img class="figure" style="margin-left: 50px; margin-top: 25px; vertical-align: top;" draggable="false" width="384px" src="images/r0payloaddebris.png">
+        <p class="note" style="margin-left: 50px; margin-top: 5px; width: 384px; display: block;">
+          Remains of the R0 dummy payload after the first test flight.
+        </p>
+        <img class="figure" style="margin-left: 50px; margin-top: 25px; vertical-align: top;" draggable="false" width="384px" src="images/x2fairingclose.png">
+        <p class="note" style="margin-left: 50px; margin-top: 5px; width: 384px; display: block;">
+          X2 and the instrument package undergoing tests atop R2, prior to being encased within the fairings.
+        </p>
+        <img class="figure" style="margin-left: 50px; margin-top: 25px; vertical-align: top;" draggable="false" width="384px" src="images/x3scimuseum.png">
+        <p class="note" style="margin-left: 50px; margin-top: 5px; width: 384px; display: block;">
+          X3 flight spare on display in the Science Museum.
+        </p>
+      </div>
+    </div>
+
+    <div class="source-list">
+      <p>[1] Douglas Millard - The Black Arrow Rocket, p.41</p>
+      <p>[2] Peter Morton - Fire Across the Desert, p.508</p>
+      <p>[3] Gunter Krebs - Gunter's Space Page,<a class="image-link" href="https://space.skyrocket.de/doc_sdat/r-2_instrument_package.htm" target="_blank">R-2 Instrument Package</a></p>
+      <p>[4] [8] Khlynin Pavlovich - Episode Space,<a class="image-link" href="https://epizodsspace.airbase.ru/bibl/afan/bol-kk2006/03.html" target="_blank">Old World:
+        Search for the "Third Way"</a></p>
+      <p>[5] [7] [10] Peter Morton - Fire Across the Desert, p.516</p>
+      <p>[6] Douglas Millard - The Black Arrow Rocket, p.42</p>
+      <p>[9] Gunter Krebs - Gunter's Space Page,<a class="image-link" href="https://space.skyrocket.de/doc_sdat/orba.htm" target="_blank">Orba (X2)</a></p>
+      <p>[11] Nicholas Hill - UK Space,<a class="image-link" href="https://web.archive.org/web/20030324092948/http://www.spaceuk.org/ba/ba.htm" target="_blank">Black Arrow</a></p>
+      <p>[12] Nicholas Hill - A Vertical Empire, p.309</p>
+      <p>[13] H. J. H. Sketch - The Prospero Satellite, p.266</p>
+      <p>[14] [19] H. J. H. Sketch - The Prospero Satellite, p.265</p>
+      <p>[15] H. J. H. Sketch - The Prospero Satellite, p.267</p>
+      <p>[16] H. J. H. Sketch - The Prospero Satellite, p.272</p>
+      <p>[17] H. J. H. Sketch - The Prospero Satellite, p.269</p>
+      <p>[18] D. K. Bedford - Observations of the micrometeoroid flux from Prospero, p.277</p>
+      <p>[20] [21] Douglas Millard - The Black Arrow Rocket, p.48</p>
+      <p>[22] Peter Morton - Fire Across the Desert, p.526</p>
+    
       </div>
 
   </body>
