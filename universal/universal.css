@@ -84,7 +84,7 @@ button {
  align-items: center;
 }
 .home {
- background-color: #b4202a;
+ background-color: #77141b;
  color: white;
  margin: 5px;
  width: 96px;
@@ -96,12 +96,18 @@ button {
  width: 96px;
 }
 .payload {
- background-color: #b4202a;
+ background-color: #77141b;
  color: white;
  margin: 5px;
  width: 96px;
 }
 .gallery {
+  background-color: #77141b;
+  color: white;
+  margin: 5px;
+  width: 96px;
+ }
+ .vehicle {
   background-color: #b4202a;
   color: white;
   margin: 5px;
