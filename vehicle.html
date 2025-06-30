@@ -4,28 +4,25 @@
 
   <head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Vehicle</title>
 
     <link rel="stylesheet" href="universal/universal.css">
 
   </head>
-  
-  <body style="
-  display: grid;
-  grid-template-columns: 150px 1fr;">
+  <body style="display: grid; grid-template-columns: 140px 0.5fr 4fr 0.5fr; margin-left: 0px;">
   
   <div class="side-bar">
     <img class="logo" draggable="false" onclick="location.href = 'index.html';" src="assets\logotestnew.png">
     <p class="navigation-title">NAVIGATION</p>
     <div class="navigation-items">
       <button class="home" onclick="location.href = 'index.html';">HOME</button>
-      <button class="launch"  onclick="location.href = 'launch.html';">LAUNCHES</button>
-      <button class="payload"  onclick="location.href = 'payload.html';">PAYLOADS</button>
-      <button class="vehicle"  onclick="location.href = 'vehicle.html';">VEHICLE</button>
-      <button class="gallery"  onclick="location.href = 'gallery.html';">GALLERY</button>
+      <button class="launch" onclick="location.href = 'launch.html';">LAUNCHES</button>
+      <button class="payload" onclick="location.href = 'payload.html';">PAYLOADS</button>
+      <button style="background-color: #77141b;" class="vehicle" onclick="location.href = 'vehicle.html';">VEHICLE</button>
+      <button class="gallery" onclick="location.href = 'gallery.html';">GALLERY</button>
     </div>
-    <p class="social-title">SOCIAL</p>
+    <p class="social-title">CONTACT</p>
     <div class="social-items">
       <form>
         <button class="tweet" type="submit" formaction="https://x.com/lowtestperoxide" formtarget="_blank">TWITTER</button>
@@ -33,13 +30,17 @@
       </form>
     </div>
     <div class="year-sidebar">
-      <p class="year-actual">2024</p>
+      <p class="year-actual">2024-2025</p>
     </div>
   </div>
 
-  <div></div>
+  <div class="sidebar-space">
+  </div>
 
-  <div class="main-body" style="text-align: justify;">   
+  <div class="left">
+  </div>
+
+  <div class="main-content-column" style="min-width: 100%; text-align: center;">   
     <h1>Vehicle</h1>
     <h2 style="margin-bottom: 0px;">Read about the vehicle</h3>
   
@@ -47,11 +48,17 @@
       <p style="margin-top: 8px;">This page will contain technical information about the launch system</p>
     </div>
 
-    <div class="information" style="max-width: 1100px; min-width: 600px;"></div>
+    <img style="height: 100px; width: 200px;" src="images/timport.png">
+
+    <div class="information" style="max-width: 1100px; min-width: 600px;">
+    </div>
       <div id="text">
         <h3></h3>
-
       </div>
+  </div>
+
+  <div class="right">
+  </div>
 
   </body>
 

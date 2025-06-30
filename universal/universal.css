@@ -2,7 +2,7 @@ html, body {
  height: 100%;
  background-color: #f3eddc;
  font-family: Arial, sans-serif;
- margin: 1px;
+ margin: 0;
 }
 p {
  display: inline-block;
@@ -35,20 +35,8 @@ sup {
 button {
  display: block;
 }
-.source-list {
- font-size: 75%;
- display: block;
- text-align: left;
- margin-top: 10px;
- margin-bottom: 20px;
- border-top-color: black;
- border-top-style: solid;
- border-top-width: 1px;
- display: grid;
- text-align: left;
- width: 1100px;
- grid-auto-flow: column;
- grid-template-rows: 40px 40px;
+form {
+  width: 100%;
 }
 .side-bar {
  background-color: #e7dcbf;
@@ -66,7 +54,7 @@ button {
  border-right-style: solid;
 }
 .logo {
- width: 116px;
+ width: 90%;
  margin: 5px;
  margin-top: 10px;
 }
@@ -82,36 +70,37 @@ button {
  flex-direction: column;
  justify-content: center;
  align-items: center;
+ width: 90%;
 }
 .home {
- background-color: #77141b;
+  background-color: #b4202a;
  color: white;
  margin: 5px;
- width: 96px;
+ width: 90%;
 }
 .launch {
  background-color: #b4202a;
  color: white;
  margin: 5px;
- width: 96px;
+ width: 90%;
 }
 .payload {
- background-color: #77141b;
+  background-color: #b4202a;
  color: white;
  margin: 5px;
- width: 96px;
-}
+ width: 90%;
+}    
 .gallery {
-  background-color: #77141b;
+  background-color: #b4202a;
   color: white;
   margin: 5px;
-  width: 96px;
+  width: 90%;
  }
  .vehicle {
   background-color: #b4202a;
   color: white;
   margin: 5px;
-  width: 96px;
+  width: 90%;
  }
 .social-title {
  margin-bottom: 5px;
@@ -125,43 +114,57 @@ button {
  flex-direction: column;
  justify-content: center;
  align-items: center;
+ width: 90%;
 }
 .tweet {
  background-color: black;
  color: white;
  margin: 5px;
- width: 96px;
+ width: 90%;
 }
 .bsky {
   background-color: darkcyan;
   color: white;
   margin: 5px;
-  width: 96px;
+  width: 90%;
  }
 .year-actual{
  display: inline;
  position: absolute;
  font-size: 75%;
  margin: 10px;
- bottom: 0;
  left: 0;
  right: 0;
- top: 1;
 }
 .year-sidebar{
  display: inline-block;
- position: relative;
+ position: fixed;
  text-align: center;
- height: 40px;
+ height: 50px;
  width: 80px;
- bottom: -65%;
+ bottom: 0;
 }
+.source-list {
+  font-size: 75%;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  border-top-color: black;
+  border-top-style: solid;
+  border-top-width: 1px;
+  display: grid;
+  text-align: left;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+ }
 .figure {
  border-width: 2px;
  border-style: solid;
  border-color: #b4202a;
- display: inline-block;
+ margin-top: 25px;
+ max-width: 90%;
 }
-.note {
+.figure-note {
  font-size: 90%;
+ margin-top: 5px;
+ display: block;
+ max-width: 90%;
 }
