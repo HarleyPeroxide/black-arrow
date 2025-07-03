@@ -3,6 +3,7 @@ html, body {
  background-color: #f3eddc;
  font-family: Arial, sans-serif;
  margin: 0;
+  overflow-x: hidden;
 }
 p {
  display: inline-block;
