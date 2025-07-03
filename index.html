@@ -7,8 +7,21 @@
 
     <link rel="stylesheet" href="universal/universal.css">
 
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 140px 4fr;
+        margin-left: 0px;
+      }
+      @media all and (max-width: 550px) {
+        body {
+        grid-template-columns: 1px 1fr;
+        }
+      }
+    </style>
+
   </head>
-  <body style="display: grid; grid-template-columns: 140px 0.5fr 4fr 0.5fr; margin-left: 0px;">
+  <body>
 
     <div class="side-bar">
     <img class="logo" draggable="false" onclick="location.href = 'index.html';" src="assets\logotestnew.png">
@@ -32,13 +45,13 @@
     </div>
     </div>
 
-    <div class="sidebar-space">
-    </div>
+    <div></div>
 
-    <div class="left">
-    </div>
+    <button class="side-bar-toggle" onclick="sidebartoggle()">
+    =
+    </button>
 
-    <div class="main-content-column" style="max-width: 100%; text-align: justify;">
+    <div class="main-content-column" style="text-align: justify; margin-left: 10px; margin-right: 10px;">
       <h1 style="text-align: center;">Welcome</h1>
       <h2 style="text-align: center;">This project is unfinished so expect information to be appended or revised</h2>
 
@@ -55,5 +68,21 @@
     <div class="right">
     </div>
 
+    <script class="side-bar-toggle-script">
+      const x = document.querySelector(".side-bar");
+      const z = document.querySelector(".side-bar-toggle");
+
+      function sidebartoggle() {
+        x.classList.toggle("show");
+        z.classList.toggle("move");
+      }
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 550) {
+          x.classList.remove("show");
+          z.classList.remove("move");
+        }
+      });
+    </script>
   </body>
 </html>

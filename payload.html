@@ -10,10 +10,45 @@
     <link rel="stylesheet" href="universal/universal.css">
 
     <style>
+      body {
+        display: grid;
+        grid-template-columns: 140px 4fr 0.5fr;
+        margin-left: 0px;
+      }
+      @media all and (max-width: 2000px) {
+        body {
+        grid-template-columns: 140px 3fr 0.5fr;
+        }
+      }
+      @media all and (max-width: 1550px) {
+        body {
+        grid-template-columns: 140px 3fr 0.75fr;
+        }
+      }
+      @media all and (max-width: 1250px) {
+        body {
+        grid-template-columns: 140px 3fr 1fr;
+        }
+      }
+      @media all and (max-width: 1000px) {
+        body {
+        grid-template-columns: 140px 3fr 1.5fr;
+        }
+      }
+      @media all and (max-width: 700px) {
+        body {
+        grid-template-columns: 140px 3fr 2fr;
+        }
+      }
+      @media all and (max-width: 550px) {
+        body {
+        grid-template-columns: 1fr;
+        }
+      }
     </style>
 
   </head>
-  <body style="display: grid; grid-template-columns: 140px 0.25fr 4fr 0.1fr 1fr 0.25fr; margin-left: 0px;">
+  <body>
   
     <div class="side-bar">
       <img class="logo" draggable="false" onclick="location.href = 'index.html';" src="assets\logotestnew.png">
@@ -37,13 +72,14 @@
       </div>
     </div>
 
-    <div class="sidebar-space">
-    </div>
-
     <div class="left">
     </div>
 
-    <div class="main-content-column" style="text-align: justify;">
+    <button class="side-bar-toggle" onclick="sidebartoggle()">
+    =
+    </button>
+
+    <div class="main-content-column" style="text-align: justify; margin-left: 10px; margin-right: 10px;">
       
       <h1>Payloads</h1>
       <h2 style="margin-bottom: 0px;">Read about the payloads</h3>
@@ -99,9 +135,7 @@
       </div>
     </div>
 
-    <div></div>
-
-    <div class="figure-content-column" style="text-align: justify;">
+    <div class="figure-content-column" style="text-align: justify; margin-right: 10px;">
 
       <div class="figure-column" style="display: flex; flex-direction: column; align-items: center; height: 100vh;">
 
@@ -122,8 +156,22 @@
       </div>
     </div>
 
-    <div class="right">
-    </div>
+    <script class="side-bar-toggle-script">
+      const x = document.querySelector(".side-bar");
+      const z = document.querySelector(".side-bar-toggle");
+
+      function sidebartoggle() {
+        x.classList.toggle("show");
+        z.classList.toggle("move");
+      }
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 550) {
+          x.classList.remove("show");
+          z.classList.remove("move");
+        }
+      });
+    </script>
 
   </body>
 </html>

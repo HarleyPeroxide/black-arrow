@@ -9,10 +9,26 @@
 
     <link rel="stylesheet" href="universal/universal.css">
 
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 140px 4fr 1fr;
+        margin-left: 0px;
+      }
+      @media all and (max-width: 550px) {
+        body {
+        grid-template-columns: 1px 1fr;
+        }
+        .placeholder {
+          display: none;
+        }
+      }
+    </style>
+
   </head>
-  <body style="display: grid; grid-template-columns: 140px 0.5fr 4fr 0.5fr; margin-left: 0px;">
+  <body>
   
-  <div class="side-bar">
+    <div class="side-bar">
     <img class="logo" draggable="false" onclick="location.href = 'index.html';" src="assets\logotestnew.png">
     <p class="navigation-title">NAVIGATION</p>
     <div class="navigation-items">
@@ -32,34 +48,52 @@
     <div class="year-sidebar">
       <p class="year-actual">2024-2025</p>
     </div>
-  </div>
+    </div>
 
-  <div class="sidebar-space">
-  </div>
+    <div class="left">
+    </div>
 
-  <div class="left">
-  </div>
 
-  <div class="main-content-column" style="min-width: 100%; text-align: center;">   
-    <h1>Vehicle</h1>
-    <h2 style="margin-bottom: 0px;">Read about the vehicle</h3>
+    <button class="side-bar-toggle" onclick="sidebartoggle()">
+      =
+    </button>
+
+    <div class="main-content-column" style="min-width: 100%; text-align: justify; margin-left: 10px;">   
+      
+      <h1>Vehicle</h1>
+      <h2 style="margin-bottom: 0px; margin-right: 20px;">Read about the vehicle</h3>
   
-    <div class="introduction" style="min-width: 200px;">
-      <p style="margin-top: 8px;">This page will contain technical information about the launch system</p>
-    </div>
-
-    <img style="height: 100px; width: 200px;" src="images/timport.png">
-
-    <div class="information" style="max-width: 1100px; min-width: 600px;">
-    </div>
-      <div id="text">
-        <h3></h3>
+      <div class="introduction" style="margin-right: 20px;">
+        <p style="margin-top: 8px;">This page will contain technical information about the launch system</p>
       </div>
-  </div>
 
-  <div class="right">
-  </div>
+      <div class="information" style="max-width: 1100px; min-width: 600px;">
+      </div>
+        <div id="text">
+          <h3></h3>
+        </div>
+    </div>
 
+    <div class="right">
+    </div>
+
+
+    <script class="side-bar-toggle-script">
+      const x = document.querySelector(".side-bar");
+      const z = document.querySelector(".side-bar-toggle");
+
+      function sidebartoggle() {
+        x.classList.toggle("show");
+        z.classList.toggle("move");
+      }
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 550) {
+          x.classList.remove("show");
+          z.classList.remove("move");
+        }
+      });
+    </script>
   </body>
 
 </html>
