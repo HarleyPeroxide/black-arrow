@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Vehicle</title>
+
+    <link rel="stylesheet" href="universal/universal.css">
+    <link rel="stylesheet" href="universal/bauniversal.css">
+
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 140px 4fr 1fr;
+        margin-left: 0px;
+      }
+      @media all and (max-width: 550px) {
+        body {
+        grid-template-columns: 1fr;
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+  
+    <div class="side-bar">
+    <img class="logo" draggable="false" onclick="location.href = 'index.html';" src="assets\harmiidef.png">
+    <p class="navigation-title">NAVIGATION</p>
+    <div class="navigation-items">
+      <button class="home" onclick="location.href = 'index.html';">HOME</button>
+      <button class="intro" onclick="location.href = 'baindex.html';">INTRO</button>
+      <button class="launch" onclick="location.href = 'balaunch.html';">LAUNCHES</button>
+      <button class="payload" onclick="location.href = 'bapayload.html';">PAYLOADS</button>
+      <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="vehicle" onclick="location.href = 'bavehicle.html';">VEHICLE</button>
+      <button class="gallery" onclick="location.href = 'bagallery.html';">GALLERY</button>
+    </div>
+    <p class="social-title">CONTACT</p>
+    <div class="social-items">
+      <form>
+        <button class="tweet" type="submit" formaction="https://x.com/lowtestperoxide" formtarget="_blank">TWITTER</button>
+        <button class="bsky" type="submit" formaction="https://bsky.app/profile/lowtestperoxide.bsky.social" formtarget="_blank">BLUESKY</button>
+      </form>
+    </div>
+    <div class="year-sidebar">
+      <p class="year-actual">2024-2026</p>
+    </div>
+    </div>
+
+    <div class="left">
+    </div>
+
+    <button class="side-bar-toggle" onclick="sidebartoggle()">
+      =
+    </button>
+
+    <div class="main-content-column" style="text-align: justify; margin-left: 10px;">   
+      
+      <h1>Vehicle</h1>
+      <h2 style="margin-bottom: 0px;">Read about the vehicle</h3>
+  
+      <div class="introduction">
+        <p style="margin-top: 8px;">This page contains a brief description of each section of the launch vehicle, from top to bottom. This page is not complete, please excuse the missing sources and lack of imagery.</p>
+      </div>
+
+      <div class="information">
+        <div id="text">
+          <h3>Payload Fairings</h3>
+          <p>Two near-identical magnesium alloy clamshell halves surround the 3rd stage in order to provide aerodynamic stability and protection.<sup>[1]</sup> Together they were 3.74m tall and weighed 63.5kg.<sup>[2]</sup><sup>[3]</sup> One half included a stainless-steel nose cap. The fairings were held together by pyrotechnically separated units located two-thirds of the way up their vertical split. When fired, these units would release compressed springs that pushed the fairings apart.<sup>[4]</sup> The fairings were attached to the 2nd stage by two hinges that would break apart once opened beyond 40 degrees.<sup>[5]</sup> Spring-loaded support arms were introduced on R3 to help push the fairings halves down towards their 40 degree ejection point. They would then lock in place below the spin table.<sup>[6]</sup></p>
+
+          <h3>Payload</h3>
+          <p>The payloads would sit above Waxwing and the satellite separation bay. The maximum payload mass was likely around 145kg, but in practise only the 72kg Prospero was put into orbit.<sup>[7]</sup><sup>[8]</sup></p>
+
+          <h3>Satellite separation bay</h3>
+          <p>The satellite separation bay was a small structure that connected the Waxwing motor to the payload. It was 30cm in height and sat atop the cylindrical section of the Waxwing motor. This meant that it did not greatly exceed its total height. Once payload deployment was required, pyrotechnically separated units would fire, releasing compressed springs and ejecting the satellite.</p>
+
+          <h3>Waxwing motor</h3>
+          <p>Waxwing was a 1.27m tall and 76.2cm wide solid rocket motor designed to provide the final push necessary to place payloads into orbit at apogee. It primarily consisted of a lightweight steel casing where the solid propellant was stored, and a 46.6cm wide reinforced resin nozzle. The motor weighed 352.89kg in total, with the weight of the propellant being 317.97kg. The solid propellant used a star shaped profile internally.</p>
+
+          <h3>Spin table, imp motors and support structure</h3>
+          <p>The spin table was a mechanism designed to impart 20 radians per second of rotation onto the 3rd stage of the vehicle by way of six radial Imp thrusters. The spin table and Waxwing motor would then be unclamped 5 seconds after Imp ignition, and 30 compressed springs would push the stages apart. The 3rd stage did not have the means to control its orientation. The rotation would make the 3rd stage gyroscopically stable, meaning that it wouldn’t deviate from pointing in the direction required for orbital insertion once the Waxwing motor had fired. The support structure connected the 2nd stage to the 3rd stage and was 99cm in height. It encompassed part of the 2nd stage kerosene tank and the nozzle of the Waxwing motor.</p>
+
+          <h3>2nd stage kerosene tank</h3>
+          <p>The 2nd stage kerosene tank had an internal volume of 0.51m3 and was pressurised to 20psi using nitrogen. It had a maximum load of 350.6kg but held about 321.6kg in practise.</p>
+
+          <h3>Electronics bay</h3>
+          <p>The electronics bay was 86.36cm tall and embraced most 2nd stage electronic units. It also held the nitrogen gas bottles and control valves used for pressurising both of the 2nd stage fuel tanks.</p>
+
+          <h3>2nd stage HTP tank</h3>
+          <p>The 2nd stage HTP tank had an internal volume of 2.23m3 and was pressurised to 20psi using nitrogen. It had a maximum load of 2850.6kg but held about 2636.7kg in practise.</p>
+
+          <h3>2nd stage motor bay and gamma 2 engine</h3>
+          <p>The motor bay was part of the interstage and was connected permanently to the 2nd stage. It was 45.72cm tall and housed part of the 2nd stage HTP tank as well as the Gamma 2 engine. The engine consisted of two Gamma 301 thrust chambers with kerosene cooled nozzle extensions. These two thrust chambers could gimble across each axis, providing the 2nd stage with full thrust vector control. During flight, the engine would burn for around 110-120 seconds. Once the propellant had depleted, eight gas jets on the motor bay would orient the vehicle during the 300 second coast phase up to apogee. Four corrected for roll, and two more corrected for errors in each lateral plane.</p>
+
+          <h3>Interstage bay and siskin motors</h3>
+          <p>The interstage bay sat between the motor bay and the separation bay within the complete interstage structure. This section was 66.34cm tall and included the four Siskin solid fuel separation thrusters. These thrusters were in pairs on either side of the vehicle, with 60.5 degrees of separation between them. They were designed to separate the vehicle from the 1st stage, and to settle the 2nd stage propellants at the bottom of their tanks. The inside of the interstage bay encompassed a portion of the Gamma 2 engine and held the HTP bottles that began 2nd stage ignition. During flight, once the 1st stage ran short of propellant, eight explosive bolts would disconnect the interstage bay from the separation bay. At the same time, the four Siskin thrusters would fire, and the Gamma 2 engine would soon thereafter ignite. After the four solid motors had burned out, eight more explosive bolts would disconnect the interstage from the motor bay.</p>
+
+          <h3>Separation bay</h3>
+          <p>The separation bay was part of the interstage and was connected permanently to the 1st stage. It was 66.29cm tall and housed part of the 1st stage kerosene tank as well as a chamber harness that supported the Gamma 2 engine. During flight, once the 1st stage ran short of propellant, eight explosive bolts would disconnect the interstage bay from the separation bay.</p>
+
+          <h3>1st stage kerosene tank</h3>
+          <p>The 1st stage kerosene tank had an internal volume of 2.14m3 and was self-pressurised from 0 to +5psi. It had a maximum load of 1450kg but held about 1416.1kg in practise.</p>
+
+          <h3>Inter tank bay</h3>
+          <p>The inter tank bay was 81.28cm tall and embraced most 1st stage electronic units. It also held the nitrogen gas bottles and control valves used for pressurising both of the 1st stage fuel tanks.</p>
+
+          <h3>1st stage HTP tank</h3>
+          <p>The 1st stage HTP tank has an internal volume of 9.1m3 and was pressurised to 12psi using nitrogen. It had a maximum load of 11,797kg but held about 11,617.9kg in practise.</p>
+
+          <h3>1st stage motor bay, skirt and gamma 8 engine</h3>
+          <p>The 1st stage motor bay resided in the skirt at the very lowest point of the vehicle. This section was 1.52m tall and housed the Gamma 8 engine as well as the instrument and electrics cabinets. The engine consisted of eight Gamma 301 thrust chambers grouped into four pairs. Each thrust chamber pairing only had the capacity to gimble across one axis. The vehicle was capable of full thrust vector control due to each thrust chamber pairing being set apart by 90 degrees within the complete engine structure. The engine was intentionally designed to keep the exhaust gas within a 1.42m diameter area. This was in order to take advantage of the existing exhaust duct used for Black Knight. During flight, the engine would burn for around 127-131 seconds.</p>
+
+        </div>        
+      </div>
+
+      <div class="source-list">
+      <p>[1] [4] Derek Mack - Black & Wight Fireworks, p.261</p>
+      <p>[2] [5] Derek Mack - Black & Wight Fireworks, p.262</p>
+      <p>[3] Douglas Millard - The Black Arrow Rocket, p.28</p>
+      <p>[6] Derek Mack - Black & Wight Fireworks, p.258</p>
+      <p>[7] Derek Mack - Black & Wight Fireworks, p.250</p>
+      <p>[8] H. J. H. Sketch - The Prospero Satellite, p.266</p>
+
+
+      </div>
+    </div>
+    
+    <div class="ba-graphic" style="height: auto; width: 30%; text-align: center; vertical-align: top">
+
+      <img class="figure" style="display: none; max-height: 90%; width: 90%; margin: 0px; margin-top: 38px;" draggable="false" src="assets/bliss.png">
+
+    </div>
+
+    <script class="side-bar-toggle-script">
+      const x = document.querySelector(".side-bar");
+      const z = document.querySelector(".side-bar-toggle");
+
+      function sidebartoggle() {
+        x.classList.toggle("show");
+        z.classList.toggle("move");
+      }
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 550) {
+          x.classList.remove("show");
+          z.classList.remove("move");
+        }
+      });
+    </script>
+  </body>
+
+</html>

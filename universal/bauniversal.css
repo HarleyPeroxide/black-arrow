@@ -1,0 +1,66 @@
+a {
+ display: inline-block;
+ margin-left: 5px;
+ color: rgb(0, 0, 0);
+}
+h1 {
+ display: block;
+ margin-top: 25px;
+ margin-bottom: 10px;
+}
+h2 {
+ display: block;
+ margin-bottom: 15px;
+}
+h3 {
+ display: block;
+ margin-top: 25px;
+ margin-bottom: -5px;
+}
+sup {
+ font-size: 75%;
+ color: purple;
+}
+button {
+ display: block;
+}
+.intro, .intro, .launch, .payload, .gallery, .vehicle {
+  background: linear-gradient(to bottom, #ffffff33, #ffffff11),
+  linear-gradient(to bottom, #ffffff 50%, #c2c2c2 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #c7c7c7;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  width: 90%;
+  margin: 2px;
+}
+.source-list {
+  font-size: 75%;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  border-top-color: black;
+  border-top-style: solid;
+  border-top-width: 1px;
+  display: grid;
+  text-align: left;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+ }
+.figure {
+ border-width: 2px;
+ border-radius: 10px;
+ border-style: solid;
+ border-color: #b4202a;
+ background-color: white;
+ margin-top: 25px;
+ width: 90%;
+ max-height: 256px;
+ object-fit: contain;
+}
+.figure-note {
+ font-size: 90%;
+ margin-top: 5px;
+ display: block;
+ max-width: 90%;
+}

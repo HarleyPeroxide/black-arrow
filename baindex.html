@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="universal/universal.css">
+    <link rel="stylesheet" href="universal/bauniversal.css">
+
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 140px 4fr;
+        margin-left: 0px;
+      }
+      @media all and (max-width: 550px) {
+        body {
+        grid-template-columns: 1fr;
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="side-bar">
+    <img class="logo" draggable="false" onclick="location.href = 'index.html';" src="assets\harmiidef.png">
+    <p class="navigation-title">NAVIGATION</p>
+    <div class="navigation-items">
+      <button class="home" onclick="location.href = 'index.html';">HOME</button>
+      <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="intro" onclick="location.href = 'baindex.html';">INTRO</button>
+      <button class="launch" onclick="location.href = 'balaunch.html';">LAUNCHES</button>
+      <button class="payload" onclick="location.href = 'bapayload.html';">PAYLOADS</button>
+      <button class="vehicle" onclick="location.href = 'bavehicle.html';">VEHICLE</button>
+      <button class="gallery" onclick="location.href = 'bagallery.html';">GALLERY</button>
+    </div>
+    <p class="social-title">CONTACT</p>
+    <div class="social-items">
+      <form>
+        <button class="tweet" type="submit" formaction="https://x.com/lowtestperoxide" formtarget="_blank">TWITTER</button>
+        <button class="bsky" type="submit" formaction="https://bsky.app/profile/lowtestperoxide.bsky.social" formtarget="_blank">BLUESKY</button>
+      </form>
+    </div>
+    <div class="year-sidebar">
+      <p class="year-actual">2024-2026</p>
+    </div>
+    </div>
+
+    <div></div>
+
+    <button class="side-bar-toggle" onclick="sidebartoggle()">
+    =
+    </button>
+
+    <div class="main-content-column" style="text-align: justify; margin-left: 10px; margin-right: 10px;">
+      <h1 style="text-align: center;">Black Arrow Archive</h1>
+      <h2 style="text-align: center;">This project is unfinished so expect information to be appended or revised</h2>
+
+      <div class="introduction">
+        <p>Hello, this part of the website is dedicated to collecting information and media related to the Black Arrow rocket. I intend to provide a well sourced and accurate archive in order to make it easier for people to research the programme than it has been for me.</p>
+      </div>
+
+      <div class="information">
+        <h3 style="margin-bottom: 0px; text-align: center;">TEMPORARY SUMMARY</h3>
+        <p>Black Arrow was a British orbital launch vehicle that flew 4 times between June 1969 and October 1971. It launched exclusively from the Woomera Test Range in South Australia. It had three stages. The first stage was powered by a Gamma 8 engine, comprising of 8 thrust chambers arranged in 4 pairs. The second stage was powered by a Gamma 2 engine, comprising of 2 thrust chambers with expanded nozzles. It also included a set of nitrogen gas thrusters. The third stage was powered by a Waxwing solid rocket motor. This stage was spun on a turntable using six radial Imp solid rocket motors prior to separation in order to stabilise the vehicle. Each Black Arrow that was built was given a serial number; from R0 to R4, with the ‘R’ standing for rocket. R4 is the only vehicle that didn’t fly and is currently preserved at the Science Museum in London. Significant amounts of the technology used on Black Arrow had already been developed for the Blue Streak missile and the Black Knight rocket. Black Arrow was designed to reuse as much technology from these earlier programmes as possible in order to reduce costs and to simplify its development.</p>
+      </div>
+
+    </div>
+    
+    <div class="right">
+    </div>
+
+    <script class="side-bar-toggle-script">
+      const x = document.querySelector(".side-bar");
+      const z = document.querySelector(".side-bar-toggle");
+
+      function sidebartoggle() {
+        x.classList.toggle("show");
+        z.classList.toggle("move");
+      }
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 550) {
+          x.classList.remove("show");
+          z.classList.remove("move");
+        }
+      });
+    </script>
+  </body>
+</html>

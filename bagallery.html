@@ -6,6 +6,7 @@
     <title>Gallery</title>
 
     <link rel="stylesheet" href="universal/universal.css">
+    <link rel="stylesheet" href="universal/bauniversal.css">
 
     <style>
       body {
@@ -14,12 +15,15 @@
         margin-left: 0px;
       }
       .image-item {
+        background: linear-gradient(to bottom, #ffffff90 0%, #ffffff00 5%);
+        background-color: black;
+        border-width: 1px;
+        border-radius: 10px;
         display: inline-block;
         width: 270px;
-        background-color: #e7dcbf;
-        border-width: 1px;
-        border-style: solid;
-        border-color: black;
+        border-style: none;
+        border-top: 1px solid black;
+        border-bottom: 2px solid #494949;
         justify-self: center;
       }
       .image-link {
@@ -33,6 +37,7 @@
         height: 256px;
         object-fit: contain;
         border-width: 2px;
+        border-radius: 8px;
         border-style: solid;
         border-color: #b4202a;
         margin: 5px;
@@ -48,7 +53,7 @@
         margin: 5px;
         bottom: 0;
         left: 0;
-        color: purple;
+        color: white;
       }
       .image-date {
         display: inline-block;
@@ -62,6 +67,7 @@
         margin-left: 5px;
         margin-top: 0px;
         margin-bottom: 0px;
+        color: white;
       }
       .search-group {
         display: inline-block;
@@ -117,14 +123,15 @@
   <body>
 
     <div class="side-bar">
-      <img class="logo" draggable="false" onclick="location.href = 'index.html';" src="assets\logotestnew.png">
+      <img class="logo" draggable="false" onclick="location.href = 'index.html';" src="assets\harmiidef.png">
       <p class="navigation-title">NAVIGATION</p>
       <div class="navigation-items">
         <button class="home" onclick="location.href = 'index.html';">HOME</button>
-        <button class="launch" onclick="location.href = 'launch.html';">LAUNCHES</button>
-        <button class="payload" onclick="location.href = 'payload.html';">PAYLOADS</button>
-        <button class="vehicle" onclick="location.href = 'vehicle.html';">VEHICLE</button>
-        <button style="background-color: #77141b;" class="gallery" onclick="location.href = 'gallery.html';">GALLERY</button>
+        <button class="intro" onclick="location.href = 'baindex.html';">INTRO</button>
+        <button class="launch" onclick="location.href = 'balaunch.html';">LAUNCHES</button>
+        <button class="payload" onclick="location.href = 'bapayload.html';">PAYLOADS</button>
+        <button class="vehicle" onclick="location.href = 'bavehicle.html';">VEHICLE</button>
+        <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="gallery" onclick="location.href = 'bagallery.html';">GALLERY</button>
       </div>
       <p class="social-title">CONTACT</p>
       <div class="social-items">
@@ -134,7 +141,7 @@
         </form>
       </div>
       <div class="year-sidebar">
-      <p class="year-actual">2024-2025</p>
+      <p class="year-actual">2024-2026</p>
       </div>
     </div>
 
@@ -213,7 +220,7 @@
             <img class="image-content" draggable="false" src="images/r1launchrevlarge.png"></a>
           <div class="image-textbox">
             <p class="image-description">R1 prior to launch (reversed), 1970</p>
-            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black%20arrow%20R3%20pad%2002.jpg" target="_blank">
+            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
           source</a>
           </div>
         </li>
@@ -403,7 +410,7 @@
             <img class="image-content" draggable="false" src="images/r2launch.png"></a>
           <div class="image-textbox">
             <p class="image-description">R2 moments after launch, 1970</p>
-            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black%20arrow%20R2%20lancement.jpg" target="_blank">
+            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
           source</a>
           </div>
         </li>
@@ -413,7 +420,7 @@
             <img class="image-content" draggable="false" src="images/r2launchthree.png"></a>
           <div class="image-textbox">
             <p class="image-description">R2 launch images in sequence, 1970</p>
-            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black%20arrow%20R2%20sequence%20tir.jpg" target="_blank">
+            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
           source</a>
           </div>
         </li>
@@ -423,7 +430,7 @@
             <img class="image-content" draggable="false" src="images/r3launchcolourcap.png"></a>
           <div class="image-textbox">  
             <p class="image-description">R3 moments after launch, 1971</p>
-            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black%20arrow%20R3%20lancement.jpg" target="_blank">
+            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
           source</a>
           </div>
         </li>
@@ -493,7 +500,17 @@
             <img class="image-content" draggable="false" src="images/r0launch.png"></a>
           <div class="image-textbox">  
             <p class="image-description">R0 moments after launch, 1969</p>
-            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black%20arrow%20R0%20lancement.jpg" target="_blank">
+            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
+          source</a>
+          </div>
+        </li>
+
+        <li class="image-item">
+          <a class="image-link" href="images/r0flight.png" target="_blank">
+            <img class="image-content" draggable="false" src="images/r0flight.png"></a>
+          <div class="image-textbox">  
+            <p class="image-description">R0 in flight, 1969</p>
+            <a class="image-source" href="https://ia804503.us.archive.org/13/items/a-vertical-empire-british-rocketry-programe_202107/A%20Vertical%20Empire%20-%20British%20rocketry%20Programe.pdf" target="_blank">
           source</a>
           </div>
         </li>
@@ -523,7 +540,7 @@
             <img class="image-content" draggable="false" src="images/r2padnofairing.png"></a>
           <div class="image-textbox">  
             <p class="image-description">R2 on the pad with the X2 payload visible, 1970</p>
-            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black%20arrow%20R2%20pad.jpg" target="_blank">
+            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
           source</a>
           </div>
         </li>
@@ -563,7 +580,7 @@
             <img class="image-content" draggable="false" src="images/r3padnofairing.png"></a>
           <div class="image-textbox">  
             <p class="image-description">R3 on the pad with the X3 payload visible, 1971</p>
-            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black%20arrow%20R3%20pad.jpg" target="_blank">
+            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
           source</a>
           </div>
         </li>
@@ -583,7 +600,7 @@
             <img class="image-content" draggable="false" src="images/r1launchcap.png"></a>
           <div class="image-textbox">
             <p class="image-description">R1 moments after launch, 1970</p>
-            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black%20arrow%20R3%20lancement%2002.jpg" target="_blank">
+            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
           source</a>
           </div>
         </li>
@@ -699,20 +716,20 @@
         </li>
 
         <li class="image-item">
-          <a class="image-link" href="images/x2fairingbw.png" target="_blank">
-            <img class="image-content" draggable="false" src="images/x2fairingbw.png"></a>
+          <a class="image-link" href="images/x1fairingbw.png" target="_blank">
+            <img class="image-content" draggable="false" src="images/x1fairingbw.png"></a>
           <div class="image-textbox">  
-            <p class="image-description">X2 payload within R2's fairing, 1970</p>
+            <p class="image-description">X1 payload within R1's fairing, 1970</p>
             <a class="image-source" href="https://web.archive.org/web/20031003140419/http://www.spaceuk.org/ba/ba.htm" target="_blank">
           source</a>
           </div>
         </li>
 
         <li class="image-item">
-          <a class="image-link" href="images/x2fairingrightbw.png" target="_blank">
-            <img class="image-content" draggable="false" src="images/x2fairingrightbw.png"></a>
+          <a class="image-link" href="images/x1fairingrightbw.png" target="_blank">
+            <img class="image-content" draggable="false" src="images/x1fairingrightbw.png"></a>
           <div class="image-textbox">  
-            <p class="image-description">X2 payload within R2's fairing, 1970</p>
+            <p class="image-description">X1 payload within R1's fairing, 1970</p>
             <a class="image-source" href="https://web.archive.org/web/20031003140419/http://www.spaceuk.org/ba/ba.htm" target="_blank">
           source</a>
           </div>
@@ -1074,6 +1091,36 @@
           <div class="image-textbox">  
             <p class="image-description">R1 first stage debris, 1970</p>
             <a class="image-source" href="https://www.dst.defence.gov.au/sites/default/files/publications/documents/Fire%20Across%20the%20Desert%20HR.pdf" target="_blank">
+          source</a>
+          </div>
+        </li>
+
+        <li class="image-item">
+          <a class="image-link" href="images/r4scimuseumjeanback.png" target="_blank">
+            <img class="image-content" draggable="false" src="images/r4scimuseumjeanback.png"></a>
+          <div class="image-textbox">  
+            <p class="image-description">R4 on display in the Science Museum, year(?)</p>
+            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
+          source</a>
+          </div>
+        </li>
+
+        <li class="image-item">
+          <a class="image-link" href="images/r4scimuseumjeanfront.png" target="_blank">
+            <img class="image-content" draggable="false" src="images/r4scimuseumjeanfront.png"></a>
+          <div class="image-textbox">  
+            <p class="image-description">R4 on display in the Science Museum, year(?)</p>
+            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
+          source</a>
+          </div>
+        </li>
+
+        <li class="image-item">
+          <a class="image-link" href="images/r4scimuseumjeanside.png" target="_blank">
+            <img class="image-content" draggable="false" src="images/r4scimuseumjeanside.png"></a>
+          <div class="image-textbox">  
+            <p class="image-description">R4 on display in the Science Museum, year(?)</p>
+            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
           source</a>
           </div>
         </li>
