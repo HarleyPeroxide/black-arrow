@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="universal/universal.css">
+
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 140px 1fr 2fr 1fr;
+        margin-left: 0px;
+      }
+      @media all and (max-width: 550px) {
+        body {
+        grid-template-columns: 0px 0fr 1fr 0fr;
+        }
+        #prospero-tracker {
+          transform: scale(0.8);
+          display: flex;
+          justify-content: center;
+        }
+      }
+      h1, h2, h3 {
+        display: inline-block;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      p {
+        text-align: center;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="side-bar">
+    <img class="logo" draggable="false" onclick="location.href = 'index.html';" src="assets\harmiidef.png">
+    <p class="navigation-title">NAVIGATION</p>
+    <div class="navigation-items">
+      <button class="home" onclick="location.href = 'index.html';">HOME</button>
+      <button class="black-arrow-archive" onclick="location.href = 'baindex.html';">BLACK ARROW</button>
+      <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="prospero-tracker" onclick="location.href = 'protracker.html';">PROSPERO TRACKER</button>
+      <button class="chance-counter" onclick="location.href = 'counter.html';">CHANCE COUNTER</button>
+    </div>
+    <p class="social-title">CONTACT</p>
+    <div class="social-items">
+      <form>
+        <button class="tweet" type="submit" formaction="https://x.com/lowtestperoxide" formtarget="_blank">TWITTER</button>
+        <button class="bsky" type="submit" formaction="https://bsky.app/profile/lowtestperoxide.bsky.social" formtarget="_blank">BLUESKY</button>
+      </form>
+    </div>
+    <div class="year-sidebar">
+      <p class="year-actual">2024-2026</p>
+    </div>
+    </div>
+
+    <div></div>
+
+    <div class="left">
+    </div>
+
+    <button class="side-bar-toggle" onclick="sidebartoggle()">
+    =
+    </button>
+
+    <div class="main-content-area" style="text-align: center;">
+
+      <h1 style="margin-top: 2px; margin-bottom: 5px;">Prospero Tracker</h1><br>
+
+      <div id="prospero-timer">
+        <h3 style="margin-bottom: 10px;">WORK IN PROGRESS</h3><br>
+        <h3 style="margin-bottom: 10px;">Prospero has been in orbit for:</h3>
+        <h3 id="clock" style="margin-top: 0px; margin-bottom: 0px;"></p>
+        <p></p>
+      </div>
+
+      <div id="prospero-tracker">
+        <script>
+          var norad_n2yo = '5580';
+          var size_n2yo = 'small';
+        </script>
+        <script type="text/javascript" src="https://www.n2yo.com/js/widget-tracker.js"></script>
+        </div>
+
+    </div>
+    
+    <div class="right">
+    </div>
+
+<script class="prospero-timer">
+  const prosperoDeploy = new Date("1971-10-28T13:49:59+09:30");
+
+  function updateProsperoTimer() {
+    const now = new Date();
+
+    let diff = now - prosperoDeploy;
+    let secondSince = Math.floor(diff / 1000);
+
+    const seconds = secondSince % 60;
+    secondSince = Math.floor(secondSince / 60);
+    const minutes = secondSince % 60;
+    secondSince = Math.floor(secondSince / 60);
+    const hours = secondSince % 24;
+    secondSince = Math.floor(secondSince / 24);
+
+    let years = 0;
+    let cursor = new Date(prosperoDeploy);
+    while (true) {
+      const nextYear = new Date(cursor);
+      nextYear.setUTCFullYear(cursor.getUTCFullYear() + 1);
+      if (nextYear <= now) {
+        years += 1;
+        cursor = nextYear;
+      } else {
+        break;
+      }
+    }
+    
+    const msRemaining = now - cursor;
+    const days = Math.floor(msRemaining / (1000 * 60 * 60 * 24));
+
+    document.getElementById("clock").textContent =
+      `${years}y ${days}d ${hours}h ${minutes}m ${seconds}s`;
+  }
+
+  updateProsperoTimer();
+  setInterval(updateProsperoTimer, 1000);
+</script>
+
+    <script class="side-bar-toggle-script" src="javascript/sbtoggle.js"></script>
+    <script class="button-sound-script" src="javascript/buttonsfx.js"></script>
+
+  </body>
+</html>

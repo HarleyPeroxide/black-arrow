@@ -24,7 +24,7 @@
       }
       @media all and (max-width: 550px) {
         body {
-        grid-template-columns: 1px 0.1fr 1fr 0.1fr;
+        grid-template-columns: 0px 15px 1fr 15px;
         }
       }
       @media (max-width: 1100px) {
@@ -44,44 +44,43 @@
       .content-grid {
         display: grid;
         grid-template-areas: "header" "intro" "content" "footer";
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        box-shadow: 0px 4px 10px 1px #3f3f3f;
       }
-      .content-grid .intro, .content {
-        display: flex;
-        background: linear-gradient(to bottom, #ffffff33, #ffffff11),
-        linear-gradient(to bottom, #ffffff 50%, #c2c2c2 100%);
+      .content-grid > div {
+        border: solid;
+        border-width: 2px;
       }
       .content-grid .header {
         grid-area: "header";
         display: flex;
         min-width: 0;
         justify-content: center;
-        border: solid;
-        border-bottom: none;
-        border-width: 2px;
         background: linear-gradient(to bottom, #ffffff33, #ffffff11),
-        linear-gradient(to bottom, #7fd0ff 50%, #005E99 100%);
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
+        linear-gradient(to bottom, #7fd0ff 25%, #005E99 75%);
+        background: farthest-corner at bottom center, white, transparent;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-width: 1px;
       }
       .content-grid .intro {
+        background: linear-gradient(to bottom, #ffffff33, #ffffff11),
+        linear-gradient(to bottom, #ffffff 50%, #c2c2c2 100%);
         grid-area: "intro";
-        border: solid;
-        border-bottom: none;
-        border-width: 2px;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
       }
       .content-grid .content {
         grid-area: "content";
         display: grid;
         grid-template-columns: auto auto;
-        border: solid;
-        border-bottom: solid;
-        border-width: 2px;
+        border-top-width: 1px;
+        background-color: black;
+        gap: 2px;
       }
       .content-grid .footer {
         grid-area: "footer";
-        border: solid;
-        border-bottom: none;
-        border-width: 2px;
       }
       .spin-mii {
         flex: 1 1 0;
@@ -90,13 +89,9 @@
         object-fit: contain;
       }
 
-      #interests {
-        border-right: solid;
-        border-width: 2px;
-      }
-
-      #date-time {
-        display: block;
+      #interests, #date-time, #place-holder, #refund-button {
+        background: linear-gradient(to bottom, #ffffff33, #ffffff11),
+        linear-gradient(to bottom, #ffffff 50%, #c2c2c2 100%);
       }
 
     </style>
@@ -110,6 +105,8 @@
     <div class="navigation-items">
       <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="home" onclick="location.href = 'index.html';">HOME</button>
       <button class="black-arrow-archive" onclick="location.href = 'baindex.html';">BLACK ARROW</button>
+      <button class="prospero-tracker" onclick="location.href = 'protracker.html';">PROSPERO TRACKER</button>
+      <button class="chance-counter" onclick="location.href = 'counter.html';">CHANCE COUNTER</button>
     </div>
     <p class="social-title">CONTACT</p>
     <div class="social-items">
@@ -142,7 +139,7 @@
         </div>
 
         <div class="intro">
-          <h3>Hello, my name is Harley. I plan to fill this website with information about myself, things I find useful, and things I find interesting.
+          <h3>Hello, my name is Harley. I plan to fill this website with information about myself, things I find useful, and things I find interesting. It is a work in progress so anticipate changes.
           </h23>
         </div>
 
@@ -150,7 +147,7 @@
 
           <div id="interests" style="display: block;">
             <h3>I am interested in:</h3>
-            <ul style="margin-top: 0px; padding-left: 24px;">
+            <ul style="margin-top: 0px; margin-right: 6px; padding-left: 24px;">
               <li>Space</li>
               <li>Science</li>
               <li>History</li>
@@ -161,10 +158,16 @@
           
           <div id="date-time">
             <h3>The time for me is:</h3>
-            <div>
+            <div style=" width: 21ch">
               <p id="clock" style="margin-top: 0px; margin-bottom: 0px;"></p>
               <p id="date" style="margin-top: 4px; margin-bottom: 0px;"></p>
             </div>
+          </div>
+
+          <div id="place-holder"></div>
+
+          <div id="refund-button" style="display: flex; justify-content: center; align-items: center;">
+            <button class="refund-the-world" style="height: 50px; width: 80%; margin: 8px;" onclick="playRefund()">REFUND</button>
           </div>
 
         </div>
@@ -174,13 +177,20 @@
     <div class="right">
     </div>
 
+    <script class="refund-script">
+      function playRefund() {
+        const audio = new Audio('assets/refund.mp3');
+        audio.play();
+      }
+    </script>
+
     <script class="my-local-time">
       function updateClock() {
         const now = new Date();
 
         const timeString = now.toLocaleTimeString("en-GB", {
           hour12: false,
-          timeZone: "GMT"
+          timeZone: "Europe/London"
         });
         document.getElementById("clock").textContent = timeString;
       }
@@ -192,7 +202,7 @@
           day: "2-digit",
           month: "long",
           year: "numeric",
-          timeZone: "GMT"
+          timeZone: "Europe/London"
         });
         document.getElementById("date").textContent = dateString
       }
@@ -203,21 +213,8 @@
       setInterval(updateDate, 60000);
     </script>
 
-    <script class="side-bar-toggle-script">
-      const x = document.querySelector(".side-bar");
-      const z = document.querySelector(".side-bar-toggle");
+    <script class="side-bar-toggle-script" src="javascript/sbtoggle.js"></script>
+    <script class="button-sound-script" src="javascript/buttonsfx.js"></script>
 
-      function sidebartoggle() {
-        x.classList.toggle("show");
-        z.classList.toggle("move");
-      }
-
-      window.addEventListener("resize", () => {
-        if (window.innerWidth > 550) {
-          x.classList.remove("show");
-          z.classList.remove("move");
-        }
-      });
-    </script>
   </body>
 </html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="universal/universal.css">
+
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 140px 1fr 2.5fr 1fr;
+        margin-left: 0px;
+      }
+      @media all and (max-width: 550px) {
+        body {
+        grid-template-columns: 1px 0fr 1fr 0fr;
+        }
+      }
+      h1, h2, h3 {
+        display: inline-block;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      p {
+        text-align: center;
+      }
+      .counter-button {
+        background: linear-gradient(to bottom, #ffffff33, #ffffff11),
+        linear-gradient(to bottom, #ffffff 50%, #c2c2c2 100%);
+        border-color: #b4202a;
+        border-style: solid;
+        border-width: 6px;
+        height: 220px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        font-size: 90px;
+      }
+      .odds-submit, .counter-clear, .all-clear {
+        max-width: 150px;
+        width: 40%;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <div class="side-bar">
+    <img class="logo" draggable="false" onclick="location.href = 'index.html';" src="assets\harmiidef.png">
+    <p class="navigation-title">NAVIGATION</p>
+    <div class="navigation-items">
+      <button class="home" onclick="location.href = 'index.html';">HOME</button>
+      <button class="black-arrow-archive" onclick="location.href = 'baindex.html';">BLACK ARROW</button>
+      <button class="prospero-tracker" onclick="location.href = 'protracker.html';">PROSPERO TRACKER</button>
+      <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="chance-counter" onclick="location.href = 'counter.html';">CHANCE COUNTER</button>
+    </div>
+    <p class="social-title">CONTACT</p>
+    <div class="social-items">
+      <form>
+        <button class="tweet" type="submit" formaction="https://x.com/lowtestperoxide" formtarget="_blank">TWITTER</button>
+        <button class="bsky" type="submit" formaction="https://bsky.app/profile/lowtestperoxide.bsky.social" formtarget="_blank">BLUESKY</button>
+      </form>
+    </div>
+    <div class="year-sidebar">
+      <p class="year-actual">2024-2026</p>
+    </div>
+    </div>
+
+    <div></div>
+
+    <div class="left">
+    </div>
+
+    <button class="side-bar-toggle" onclick="sidebartoggle()">
+    =
+    </button>
+
+    <div class="main-content-area" style="text-align: center;">
+
+      <h1 style="margin-top: 2px; margin-bottom: 5px;">Chance Counter</h1><br>
+      <h2 style="margin-top: 0px; margin-bottom: 5px;">Odds of hitting odds based on count</h2><br>
+      <h3 style="margin-bottom: 10px;">Please enter the chances of the event occuring</h3><br>
+
+      <input type="number" id="inputBar" value="1" min="1" maxlength="999999"><br>
+      <button class="odds-submit" onclick="updateOdds()+chanceCalc()" style="margin-top: 5px;">SUBMIT</button><br>
+
+      <p id="showhere">1 / 0</p><br>
+
+      <div>
+
+      <button onmousedown="updateCount()" class="counter-button"></button><br>
+      </div>
+
+      <p id="chance-display" style="margin-top: 16px;">Chance of having hit your target: 0%</p><br>
+
+      <button class="counter-clear" onclick="clearCount()" style="margin-top: 10px;">CLEAR COUNTER</button><br>
+      <button class="all-clear" onclick="clearScript()" style="margin-top: 10px;">CLEAR ALL INPUTS</button>
+
+    </div>
+    
+    <div class="right">
+    </div>
+
+    <script class="odds-input-script">
+      function updateOdds() {
+        let oddsInput = document.getElementById("inputBar").value;
+        if (oddsInput > 999999) {
+          oddsInput = 999999;
+        }
+        localStorage.setItem("oddsInput", oddsInput);
+        document.getElementById("showhere").innerHTML = ("1 / "+oddsInput);
+      }
+    </script>
+
+    <script class="count-input-script">
+
+      function updateCount() {
+        let countInput = Number(localStorage.getItem("countInput")) || 0;
+        countInput += 1;
+        localStorage.setItem("countInput", countInput);
+        document.querySelector(".counter-button").innerHTML = countInput;
+        chanceCalc();
+        playCounterButtonClickSound();
+      }
+
+    </script>
+
+    <script class="counter-fx">
+      function playCounterButtonClickSound() {
+      const audio = new Audio("assets/countclick.wav");
+      audio.play();
+      }
+
+    </script>
+
+    <script class="chance-calculator-script">
+      function chanceCalc() {
+        let countValue = Number(localStorage.getItem("countInput")) || 0;
+        let oddsValue = Number(localStorage.getItem("oddsInput")) || 4096;
+
+        let chanceValue = (1- (1 - (1 / oddsValue))**countValue) * 100;
+        localStorage.setItem("chanceValue", chanceValue);
+        console.log(chanceValue);
+        document.getElementById("chance-display").innerHTML =
+        ("Chance of having hit your target: "+((chanceValue).toFixed(4))+"%");
+      }
+
+    </script>
+
+
+    <script class="input-loadclear-script">
+      window.onload = function () {
+        loadOdds();
+        loadCount();
+        chanceCalc();
+      }
+      function loadOdds() {
+        let oddsInput = Number(localStorage.getItem("oddsInput")) || 4096;
+        document.getElementById("showhere").innerHTML = ("1 / "+oddsInput);
+        document.getElementById("inputBar").value = (oddsInput)
+      }
+      function loadCount() {
+        let countInput = Number(localStorage.getItem("countInput")) || 0;
+        document.querySelector(".counter-button").innerHTML = (countInput);
+      }
+
+      function clearCount() {
+        localStorage.setItem("countInput", 0);  
+        document.querySelector(".counter-button").innerHTML = 0;   
+        chanceCalc();   
+      }
+
+      function clearScript() {
+        localStorage.clear();
+        oddsInput = 4096;
+        countInput = 0;
+        chanceValue = 0;
+
+        document.getElementById("showhere").innerHTML = ("1 / "+oddsInput);
+        document.getElementById("inputBar").value = (4096)
+        document.querySelector(".counter-button").innerHTML = 0;
+        document.getElementById("chance-display").innerHTML =
+        ("Chance of having hit your target: "+((chanceValue).toFixed(4))+"%");
+      }
+
+    </script>
+
+    <script class="side-bar-toggle-script" src="javascript/sbtoggle.js"></script>
+    <script class="button-sound-script" src="javascript/buttonsfx.js"></script>
+
+  </body>
+</html>

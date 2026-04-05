@@ -24,6 +24,7 @@
         border-style: none;
         border-top: 1px solid black;
         border-bottom: 2px solid #494949;
+        box-shadow: 0px 4px 10px 1px #3f3f3f;
         justify-self: center;
       }
       .image-link {
@@ -132,7 +133,11 @@
         <button class="payload" onclick="location.href = 'bapayload.html';">PAYLOADS</button>
         <button class="vehicle" onclick="location.href = 'bavehicle.html';">VEHICLE</button>
         <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="gallery" onclick="location.href = 'bagallery.html';">GALLERY</button>
+        <button class="vehicle" onclick="location.href = 'bavideo.html';">VIDEO</button>
+        <button class="prospero-tracker" onclick="location.href = 'protracker.html';">PROSPERO TRACKER</button>
+        <button class="chance-counter" onclick="location.href = 'counter.html';">CHANCE COUNTER</button>
       </div>
+
       <p class="social-title">CONTACT</p>
       <div class="social-items">
         <form>
@@ -156,8 +161,8 @@
       <div style="margin-left: 10px; margin-right: 10px;">
         <h1>Gallery</h1>
         <h2>Click on the images to open them in a new tab for full size viewing</h2>
-        <h4 style="margin-top: 0px; margin-bottom: 0px;">Please contact me if you find an error, or own any of the images and want them to be removed</h3>
-        <p style="display: block; margin-top: 5px; margin-bottom: 0px;">This gallary contains relevant images to the archive, as well as each of the images used across the website</p>
+        <h4 style="margin-top: 0px; margin-bottom: 0px;">Please contact me if you find an error, or own any of the images and want them to be removed</h4>
+        <p style="display: block; margin-top: 5px; margin-bottom: 0px;">This gallary contains relevant images to the archive, as well as each of the images used across the archive</p>
         <p style="display: block; margin-top: 5px; margin-bottom: 0px;">The sources linked are the clearest and earliest occurance of each image that I could find</p>
         <p style="display: block; margin-top: 5px; margin-bottom: 0px;">Information directly followed by (?) indicates that I am uncertain about it</p>
       </div>
@@ -1128,21 +1133,7 @@
       </ul>
     </div>
 
-    <script class="side-bar-toggle-script">
-      const x = document.querySelector(".side-bar");
-      const z = document.querySelector(".side-bar-toggle");
-
-      function sidebartoggle() {
-        x.classList.toggle("show");
-        z.classList.toggle("move");
-      }
-
-      window.addEventListener("resize", () => {
-        if (window.innerWidth > 550) {
-          x.classList.remove("show");
-          z.classList.remove("move");
-        }
-      });
-    </script>
+    <script class="side-bar-toggle-script" src="javascript/sbtoggle.js"></script>
+    <script class="button-sound-script" src="javascript/buttonsfx.js"></script>
   </body>
 </html>

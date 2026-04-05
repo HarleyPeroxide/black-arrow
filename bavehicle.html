@@ -36,6 +36,9 @@
       <button class="payload" onclick="location.href = 'bapayload.html';">PAYLOADS</button>
       <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="vehicle" onclick="location.href = 'bavehicle.html';">VEHICLE</button>
       <button class="gallery" onclick="location.href = 'bagallery.html';">GALLERY</button>
+      <button class="vehicle" onclick="location.href = 'bavideo.html';">VIDEO</button>
+      <button class="prospero-tracker" onclick="location.href = 'protracker.html';">PROSPERO TRACKER</button>
+      <button class="chance-counter" onclick="location.href = 'counter.html';">CHANCE COUNTER</button>
     </div>
     <p class="social-title">CONTACT</p>
     <div class="social-items">
@@ -133,22 +136,8 @@
 
     </div>
 
-    <script class="side-bar-toggle-script">
-      const x = document.querySelector(".side-bar");
-      const z = document.querySelector(".side-bar-toggle");
-
-      function sidebartoggle() {
-        x.classList.toggle("show");
-        z.classList.toggle("move");
-      }
-
-      window.addEventListener("resize", () => {
-        if (window.innerWidth > 550) {
-          x.classList.remove("show");
-          z.classList.remove("move");
-        }
-      });
-    </script>
+    <script class="side-bar-toggle-script" src="javascript/sbtoggle.js"></script>
+    <script class="button-sound-script" src="javascript/buttonsfx.js"></script>
   </body>
 
 </html>
