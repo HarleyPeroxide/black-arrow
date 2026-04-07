@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="/atexternal/universal/universal.css">
+
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 140px 1fr 2fr 1fr;
+        margin-left: 0px;
+      }
+      @media all and (max-width: 600px) {
+        body {
+        grid-template-columns: 0px 0fr 1fr 0fr;
+        }
+      }
+      @media all and (max-width: 600px) {
+        .side-bar {
+          visibility: hidden;
+        }
+        .side-bar.show {
+          visibility: visible;
+        }
+      }
+      .side-bar-toggle {
+          visibility: visible;
+      }
+      @media all and (min-width: 600px) {
+        .side-bar-toggle {
+          visibility: hidden;
+        }
+      }   
+      h1, h2, h3 {
+        display: inline-block;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      p {
+        text-align: center;
+      }
+      .protracker-contain {
+        background: linear-gradient(to bottom, #ffffff90 0%, #ffffff00 5%);
+        background-color: #b4202a;
+        border-width: 1px;
+        border-radius: 10px;
+        display: inline-block;
+        width: 440px;
+        border-style: none;
+        border-top: 1px solid #b4202a;
+        border-bottom: 2px solid #494949;
+        box-shadow: 0px 4px 10px 1px #3f3f3f;
+      }
+      @media all and (max-width: 471px) {
+        .protracker-contain {
+          transform: scale(0.8);
+          position: absolute;
+          left: calc(50vw - 220px)
+        }
+      } 
+      @media all and (max-width: 375px) {
+        .protracker-contain {
+          transform: scale(0.7);
+          position: absolute;
+          left: calc(50vw - 220px)
+        }
+      } 
+    </style>
+
+  </head>
+  <body>
+
+    <div class="side-bar">
+    <img class="logo" draggable="false" onclick="location.href = '/home/';" src="/assets/harmiidef.png">
+    <p class="navigation-title">NAVIGATION</p>
+    <div class="navigation-items">
+      <button class="home" onclick="location.href = '/home/';">HOME</button>
+      <button class="black-arrow-archive" onclick="location.href = '/black-arrow-archive/';">BLACK ARROW</button>
+      <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="prospero-tracker" onclick="location.href = '/protracker/';">PROSPERO TRACKER</button>
+      <button class="chance-counter" onclick="location.href = '/counter/';">CHANCE COUNTER</button>
+    </div>
+    <p class="social-title">CONTACT</p>
+    <div class="social-items">
+      <form>
+        <button class="tweet" type="submit" formaction="https://x.com/lowtestperoxide" formtarget="_blank">TWITTER</button>
+        <button class="bsky" type="submit" formaction="https://bsky.app/profile/lowtestperoxide.bsky.social" formtarget="_blank">BLUESKY</button>
+      </form>
+    </div>
+    <div class="year-sidebar">
+      <p class="year-actual">2024-2026</p>
+    </div>
+    </div>
+
+    <div></div>
+
+    <div class="left">
+    </div>
+
+    <button class="side-bar-toggle" onclick="sidebartoggle()">
+    =
+    </button>
+
+    <div class="main-content-area" style="text-align: center;">
+
+      <h1 style="margin-top: 2px; margin-bottom: 5px;">Prospero Tracker</h1><br>
+
+      <div id="prospero-timer">
+        <h3 style="margin-bottom: 10px;">Prospero has been in orbit for:</h3>
+        <h3 id="clock" style="margin-top: 0px; margin-bottom: 0px;"></p>
+      </div>
+
+      <p style="margin-top: 8px;">Estimated time of separation: 28th October 1971 at 13:49:59 UTC+09:30</p>
+
+      <div class="protracker-contain">
+        <div class="tracker" style="margin-top: 15px; margin-left: 8px;">
+          <script>
+            var norad_n2yo = '5580|Prospero';
+            var size_n2yo = 'small';
+            var map_n2yo = '4';
+          </script>
+          <script type="text/javascript" src="https://www.n2yo.com/js/widget-tracker.js"></script>
+        </div>
+        </div>
+
+    </div>
+    
+    <div class="right">
+    </div>
+
+<script class="prospero-timer">
+  const prosperoDeploy = new Date("1971-10-28T13:49:59+09:30");
+
+  function updateProsperoTimer() {
+    const now = new Date();
+
+    let millisecondSince = now - prosperoDeploy;
+    let timeSince = Math.floor(millisecondSince / 1000); //convert milliseconds into seconds
+
+    const seconds = timeSince % 60; //give me seconds left after removing full minutes
+    timeSince = Math.floor(timeSince / 60); //convert seconds into minutes
+    const minutes = timeSince % 60; //give me minutes left after removing full hours
+    timeSince = Math.floor(timeSince / 60); //convert minutes into hours
+    const hours = timeSince % 24; //give me hours left after removing full days
+
+    let years = 0; //count anniversaries until it passes present
+    let cursor = new Date(prosperoDeploy);
+    while (true) {
+      const nextYear = new Date(cursor);
+      nextYear.setUTCFullYear(cursor.getUTCFullYear() + 1);
+      if (nextYear <= now) {
+        years += 1;
+        cursor = nextYear;
+      } else {
+        break;
+      }
+    }
+
+    const sinceAnniversary = now - cursor; //milliseconds since last anniversary
+    const days =
+    Math.floor(sinceAnniversary / (1000 * 60 * 60 * 24)); //convert milliseconds into days
+
+    document.getElementById("clock").textContent =
+      `${years}y ${days}d ${hours}h ${minutes}m ${seconds}s`;
+  }
+
+  updateProsperoTimer();
+  setInterval(updateProsperoTimer, 1000);
+</script>
+
+    <script class="side-bar-toggle-script" src="/atexternal/javascript/sbtoggle.js"></script>
+    <script class="button-sound-script" src="/atexternal/javascript/buttonsfx.js"></script>
+
+  </body>
+</html>

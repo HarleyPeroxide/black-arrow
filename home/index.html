@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Home</title>
 
-    <link rel="stylesheet" href="universal/universal.css">
+    <link rel="stylesheet" href="/atexternal/universal/universal.css">
 
     <audio preload="auto" loop>
-      <source src="assets\scglobalwarming.mp3" type="audio/mp3">
+      <source src="/assets/scglobalwarming.mp3" type="audio/mp3">
     </audio>
 
     <style>
@@ -16,7 +16,7 @@
         display: grid;
         grid-template-columns: 140px 1fr 2.5fr 1fr;
         margin-left: 0px;
-        background-image: url('assets/bliss.png');
+        background-image: url('/assets/bliss.png');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -100,13 +100,13 @@
   <body>
 
     <div class="side-bar">
-    <img class="logo" draggable="false" onclick="location.href = 'index.html';" src="assets\harmiidef.png">
+    <img class="logo" draggable="false" onclick="location.href = '/home/';" src="/assets/harmiidef.png">
     <p class="navigation-title">NAVIGATION</p>
     <div class="navigation-items">
-      <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="home" onclick="location.href = 'index.html';">HOME</button>
-      <button class="black-arrow-archive" onclick="location.href = 'baindex.html';">BLACK ARROW</button>
-      <button class="prospero-tracker" onclick="location.href = 'protracker.html';">PROSPERO TRACKER</button>
-      <button class="chance-counter" onclick="location.href = 'counter.html';">CHANCE COUNTER</button>
+      <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="home" onclick="location.href = '/home/';">HOME</button>
+      <button class="black-arrow-archive" onclick="location.href = '/black-arrow-archive/';">BLACK ARROW</button>
+      <button class="prospero-tracker" onclick="location.href = '/protracker/';">PROSPERO TRACKER</button>
+      <button class="chance-counter" onclick="location.href = '/counter/';">CHANCE COUNTER</button>
     </div>
     <p class="social-title">CONTACT</p>
     <div class="social-items">
@@ -133,9 +133,9 @@
 
       <div class="content-grid">
         <div class="header">
-        <img class="spin-mii" src="assets\miigif.gif" alt="spinningmii">
+        <img class="spin-mii" src="/assets/miigif.gif" alt="spinningmii">
         <h1 style="text-align: center; margin: 5px; margin-top: 8%; margin-bottom: 8%;">Welcome to woomera.space</h1>
-        <img class="spin-mii" src="assets\miigif.gif" alt="spinningmii">
+        <img class="spin-mii" src="/assets/miigif.gif" alt="spinningmii">
         </div>
 
         <div class="intro">
@@ -179,7 +179,7 @@
 
     <script class="refund-script">
       function playRefund() {
-        const audio = new Audio('assets/refund.mp3');
+        const audio = new Audio('/assets/refund.mp3');
         audio.play();
       }
     </script>
@@ -213,8 +213,8 @@
       setInterval(updateDate, 60000);
     </script>
 
-    <script class="side-bar-toggle-script" src="javascript/sbtoggle.js"></script>
-    <script class="button-sound-script" src="javascript/buttonsfx.js"></script>
+    <script class="side-bar-toggle-script" src="/atexternal/javascript/sbtoggle.js"></script>
+    <script class="button-sound-script" src="/atexternal/javascript/buttonsfx.js"></script>
 
   </body>
 </html>

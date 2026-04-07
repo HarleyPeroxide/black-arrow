@@ -1,5 +1,5 @@
 function playButtonSound() {
-  const audio = new Audio("assets/buttonhover.wav");
+  const audio = new Audio("/assets/buttonhover.wav");
   audio.play();
 }
 
