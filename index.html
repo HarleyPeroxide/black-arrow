@@ -16,11 +16,11 @@
         display: grid;
         grid-template-columns: 140px 1fr 2.5fr 1fr;
         margin-left: 0px;
-        background-image: url('/assets/bliss.png');
+        background-image: url('/assets/track.png');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        backdrop-filter: blur(8px);
+        backdrop-filter: blur(0px);
       }
       @media all and (max-width: 550px) {
         body {
@@ -89,7 +89,7 @@
         object-fit: contain;
       }
 
-      #interests, #date-time, #place-holder, #refund-button {
+      #interests, #date-time, #bgm-button, #refund-button {
         background: linear-gradient(to bottom, #ffffff33, #ffffff11),
         linear-gradient(to bottom, #ffffff 50%, #c2c2c2 100%);
       }
@@ -100,24 +100,24 @@
   <body>
 
     <div class="side-bar">
-    <img class="logo" draggable="false" onclick="location.href = '/';" src="/assets/harmiidef.png">
-    <p class="navigation-title">NAVIGATION</p>
-    <div class="navigation-items">
-      <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="home" onclick="location.href = '/';">HOME</button>
-      <button class="black-arrow-archive" onclick="location.href = '/black-arrow-archive/';">BLACK ARROW</button>
-      <button class="prospero-tracker" onclick="location.href = '/protracker/';">PROSPERO TRACKER</button>
-      <button class="chance-counter" onclick="location.href = '/counter/';">CHANCE COUNTER</button>
-    </div>
-    <p class="social-title">CONTACT</p>
-    <div class="social-items">
-      <form>
-        <button class="tweet" type="submit" formaction="https://x.com/lowtestperoxide" formtarget="_blank">TWITTER</button>
-        <button class="bsky" type="submit" formaction="https://bsky.app/profile/lowtestperoxide.bsky.social" formtarget="_blank">BLUESKY</button>
-      </form>
-    </div>
-    <div class="year-sidebar">
-      <p class="year-actual">2024-2026</p>
-    </div>
+      <img class="logo" draggable="false" onclick="location.href = '/';" src="/assets/2026logoarial.svg">
+      <p class="navigation-title">NAVIGATION</p>
+      <div class="navigation-items">
+        <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="home" onclick="location.href = '/';">HOME</button>
+        <button class="black-arrow-archive" onclick="location.href = '/black-arrow-archive/';">BLACK ARROW</button>
+        <button class="prospero-tracker" onclick="location.href = '/protracker/';">PROSPERO TRACKER</button>
+        <button class="chance-counter" onclick="location.href = '/counter/';">CHANCE COUNTER</button>
+      </div>
+      <p class="social-title">CONTACT</p>
+      <div class="social-items">
+        <form>
+          <button class="tweet" type="submit" formaction="https://x.com/lowtestperoxide" formtarget="_blank">TWITTER</button>
+          <button class="bsky" type="submit" formaction="https://bsky.app/profile/lowtestperoxide.bsky.social" formtarget="_blank">BLUESKY</button>
+        </form>
+      </div>
+      <div class="year-sidebar">
+        <p class="year-actual">2024-2026</p>
+      </div>
     </div>
 
     <div></div>
@@ -139,14 +139,14 @@
         </div>
 
         <div class="intro">
-          <h3>I plan to fill this website with things I find useful and things I find interesting. It is a work in progress so anticipate changes.
+          <h3>I plan to fill this website with things I find useful and things I find interesting. It is a work-in-progress passion project so please anticipate changes.
           </h23>
         </div>
 
         <div class="content">
 
           <div id="interests" style="display: block;">
-            <h3>I am interested in:</h3>
+            <h3 style="margin-top: 16px;">I am interested in:</h3>
             <ul style="margin-top: 0px; margin-right: 6px; padding-left: 24px;">
               <li>Space</li>
               <li>Science</li>
@@ -157,14 +157,16 @@
           </div>
           
           <div id="date-time">
-            <h3>The time for me is:</h3>
+            <h3 style="margin-top: 16px;">The time for me is:</h3>
             <div style=" width: 21ch">
               <p id="clock" style="margin-top: 0px; margin-bottom: 0px;"></p>
               <p id="date" style="margin-top: 4px; margin-bottom: 0px;"></p>
             </div>
           </div>
-
-          <div id="place-holder"></div>
+          
+          <div id="bgm-button" style="display: flex; justify-content: center; align-items: center;">
+            <button class="background-music" style="height: 50px; width: 80%; margin: 8px;" onclick="playBackground()">JAMBOREE</button>
+          </div>
 
           <div id="refund-button" style="display: flex; justify-content: center; align-items: center;">
             <button class="refund-the-world" style="height: 50px; width: 80%; margin: 8px;" onclick="playRefund()">REFUND</button>
@@ -177,9 +179,13 @@
     <div class="right">
     </div>
 
-    <script class="refund-script">
+    <script class="music-script">
       function playRefund() {
         const audio = new Audio('/assets/refund.mp3');
+        audio.play();
+      }
+      function playBackground() {
+        const audio = new Audio('/assets/whipjamboree.mp3');
         audio.play();
       }
     </script>

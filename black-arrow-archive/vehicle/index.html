@@ -13,7 +13,7 @@
     <style>
       body {
         display: grid;
-        grid-template-columns: 140px 4fr 1fr;
+        grid-template-columns: 140px 4fr;
         margin-left: 0px;
       }
       @media all and (max-width: 550px) {
@@ -21,35 +21,54 @@
         grid-template-columns: 1fr;
         }
       }
+      .figure-item {
+        display: inline-block;
+      }
+      .figure {
+        border-width: 2px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: #b4202a;
+        background-color: white;
+        margin-top: 25px;
+        width: 100%;
+        max-height: 256px;
+        object-fit: contain;
+      }
+      .figure-note {
+        font-size: 90%;
+        margin-top: 5px;
+        max-width: 256px;
+      }
     </style>
 
   </head>
   <body>
   
     <div class="side-bar">
-    <img class="logo" draggable="false" onclick="location.href = '/';" src="/assets/harmiidef.png">
-    <p class="navigation-title">NAVIGATION</p>
-    <div class="navigation-items">
-      <button class="home" onclick="location.href = '/';">HOME</button>
-      <button class="intro" onclick="location.href = '/black-arrow-archive/';">INTRO</button>
-      <button class="launch" onclick="location.href = '/black-arrow-archive/launch/';">LAUNCHES</button>
-      <button class="payload" onclick="location.href = '/black-arrow-archive/payload/';">PAYLOADS</button>
-      <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="vehicle" onclick="location.href = '/black-arrow-archive/vehicle/';">VEHICLE</button>
-      <button class="gallery" onclick="location.href = '/black-arrow-archive/gallery/';">GALLERY</button>
-      <button class="vehicle" onclick="location.href = '/black-arrow-archive/video/';">VIDEO</button>
-      <button class="prospero-tracker" onclick="location.href = '/protracker/';">PROSPERO TRACKER</button>
-      <button class="chance-counter" onclick="location.href = '/counter/';">CHANCE COUNTER</button>
-    </div>
-    <p class="social-title">CONTACT</p>
-    <div class="social-items">
-      <form>
-        <button class="tweet" type="submit" formaction="https://x.com/lowtestperoxide" formtarget="_blank">TWITTER</button>
-        <button class="bsky" type="submit" formaction="https://bsky.app/profile/lowtestperoxide.bsky.social" formtarget="_blank">BLUESKY</button>
-      </form>
-    </div>
-    <div class="year-sidebar">
-      <p class="year-actual">2024-2026</p>
-    </div>
+      <img class="logo" draggable="false" onclick="location.href = '/';" src="/assets/2026logoarial.svg">
+      <p class="navigation-title">NAVIGATION</p>
+      <div class="navigation-items">
+        <button class="home" onclick="location.href = '/';">HOME</button>
+        <button class="intro" onclick="location.href = '/black-arrow-archive/';">INTRO</button>
+        <button class="launch" onclick="location.href = '/black-arrow-archive/launch/';">LAUNCHES</button>
+        <button class="payload" onclick="location.href = '/black-arrow-archive/payload/';">PAYLOADS</button>
+        <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="vehicle" onclick="location.href = '/black-arrow-archive/vehicle/';">VEHICLE</button>
+        <button class="gallery" onclick="location.href = '/black-arrow-archive/gallery/';">GALLERY</button>
+        <button class="vehicle" onclick="location.href = '/black-arrow-archive/video/';">VIDEO</button>
+        <button class="prospero-tracker" onclick="location.href = '/protracker/';">PROSPERO TRACKER</button>
+        <button class="chance-counter" onclick="location.href = '/counter/';">CHANCE COUNTER</button>
+      </div>
+      <p class="social-title">CONTACT</p>
+      <div class="social-items">
+        <form>
+          <button class="tweet" type="submit" formaction="https://x.com/lowtestperoxide" formtarget="_blank">TWITTER</button>
+          <button class="bsky" type="submit" formaction="https://bsky.app/profile/lowtestperoxide.bsky.social" formtarget="_blank">BLUESKY</button>
+        </form>
+      </div>
+      <div class="year-sidebar">
+        <p class="year-actual">2024-2026</p>
+      </div>
     </div>
 
     <div class="left">
@@ -71,7 +90,21 @@
       <div class="information">
         <div id="text">
           <h3>Payload Fairings</h3>
-          <p>Two near-identical magnesium alloy clamshell halves surround the 3rd stage in order to provide aerodynamic stability and protection.<sup>[1]</sup> Together they were 3.74m tall and weighed 63.5kg.<sup>[2]</sup><sup>[3]</sup> One half included a stainless-steel nose cap. The fairings were held together by pyrotechnically separated units located two-thirds of the way up their vertical split. When fired, these units would release compressed springs that pushed the fairings apart.<sup>[4]</sup> The fairings were attached to the 2nd stage by two hinges that would break apart once opened beyond 40 degrees.<sup>[5]</sup> Spring-loaded support arms were introduced on R3 to help push the fairings halves down towards their 40 degree ejection point. They would then lock in place below the spin table.<sup>[6]</sup></p>
+          <p>Two near-identical magnesium alloy clamshell halves surround the 3rd stage in order to protect the payloads and provide aerodynamic stability.<sup>[1]</sup> Together they were 3.74m tall and weighed 63.5kg.<sup>[2]</sup><sup>[3]</sup> One half included a stainless-steel nose cap. The fairings were held together by pyrotechnically separated units located two-thirds of the way up their vertical split. When fired, these units would release compressed springs that pushed the fairings apart.<sup>[4]</sup> The fairings were attached to the 2nd stage by two hinges that would break apart once opened beyond 40 degrees.<sup>[5]</sup> Spring-loaded support arms were introduced on R3 to help push the fairings halves down towards their 40 degree ejection point. They would then lock in place below the spin table.<sup>[6]</sup></p>
+
+          <div class="figure-item">
+          <img class="figure" draggable="false" src="/assets/bagallery/r0payloaddebris.png">
+          <p class="figure-note">
+          Remains of the R0 dummy payload after the first test flight.
+          </p>
+          </div>
+
+          <div class="figure-item">
+          <img class="figure" draggable="false" src="/assets/bagallery/r0payloaddebris.png">
+          <p class="figure-note">
+          Remains of the R0 dummy payload after the first test flight.
+          </p>
+          </div>
 
           <h3>Payload</h3>
           <p>The payloads would sit above Waxwing and the satellite separation bay. The maximum payload mass was likely around 145kg, but in practise only the 72kg Prospero was put into orbit.<sup>[7]</sup><sup>[8]</sup></p>

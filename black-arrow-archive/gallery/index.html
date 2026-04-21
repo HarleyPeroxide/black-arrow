@@ -90,7 +90,7 @@
         margin-right: 15px;
         grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
         grid-auto-rows: 340px;
-        gap: 14px;
+        gap: 15px;
       }
       .hidden {
         display: none;
@@ -124,7 +124,7 @@
   <body>
 
     <div class="side-bar">
-      <img class="logo" draggable="false" onclick="location.href = '/';" src="/assets/harmiidef.png">
+      <img class="logo" draggable="false" onclick="location.href = '/';" src="/assets/2026logoarial.svg">
       <p class="navigation-title">NAVIGATION</p>
       <div class="navigation-items">
         <button class="home" onclick="location.href = '/';">HOME</button>
@@ -137,7 +137,6 @@
         <button class="prospero-tracker" onclick="location.href = '/protracker/';">PROSPERO TRACKER</button>
         <button class="chance-counter" onclick="location.href = '/counter/';">CHANCE COUNTER</button>
       </div>
-
       <p class="social-title">CONTACT</p>
       <div class="social-items">
         <form>
@@ -146,7 +145,7 @@
         </form>
       </div>
       <div class="year-sidebar">
-      <p class="year-actual">2024-2026</p>
+        <p class="year-actual">2024-2026</p>
       </div>
     </div>
 
@@ -165,6 +164,7 @@
         <p style="display: block; margin-top: 5px; margin-bottom: 0px;">This gallary contains relevant images to the archive, as well as each of the images used across the archive</p>
         <p style="display: block; margin-top: 5px; margin-bottom: 0px;">The sources linked are the clearest and earliest occurance of each image that I could find</p>
         <p style="display: block; margin-top: 5px; margin-bottom: 0px;">Information directly followed by (?) indicates that I am uncertain about it</p>
+        <p style="display: block; margin-top: 10px; margin-bottom: 0px;">*Images have been converted to png from their original formats</p>
       </div>
 
       <form class="search-group">
@@ -200,9 +200,9 @@
 
       <ul id="content" class="gallery-content">
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r1launch.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r1launch.png"></a>
+        <li class="image-item" data-file="r1launch.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R1 moments after launch, 1970</p>
             <a class="image-source" href="https://x.com/ESA_History/status/1718192379151470843" target="_blank" id="image-location">
@@ -210,9 +210,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r1launchrev.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r1launchrev.png"></a>
+        <li class="image-item" data-file="r1launchrev.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R1 prior to launch (reversed), 1970</p>
             <a class="image-source" href="https://arstechnica.com/science/2016/06/the-uk-should-rejoin-space-race-say-mps/" target="_blank">
@@ -220,9 +220,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r1launchrevlarge.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r1launchrevlarge.png"></a>
+        <li class="image-item" data-file="r1launchrevlarge.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R1 prior to launch (reversed), 1970</p>
             <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
@@ -230,9 +230,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3launch.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3launch.png"></a>
+        <li class="image-item" data-file="r3launch.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R3 moments after launch, 1971</p>
             <a class="image-source" href="https://www.esa.int/Science_Exploration/Space_Science/28_October" target="_blank">
@@ -240,9 +240,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3launchcolour.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3launchcolour.png"></a>
+        <li class="image-item" data-file="r3launchcolour.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R3 moments after launch, 1971</p>
             <a class="image-source" href="https://web.archive.org/web/20190306162807/http://www.b14643.de/Spacerockets_1/West_Europe/BlackArrow/Gallery/Arrow_2big.jpg" target="_blank">
@@ -250,9 +250,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3small.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3small.png"></a>
+        <li class="image-item" data-file="r3small.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R3 moments after launch, 1971</p>
             <a class="image-source" href="http://www.astronautix.com/b/blackarrow.html" target="_blank">
@@ -260,59 +260,59 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/skyroradebrisman.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/skyroradebrisman.png"></a>
+        <li class="image-item" data-file="skyroradebrisman.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
-            <p class="image-description">R2 first stage debris on display in Farnborough, 2020</p>
+            <p class="image-description">R3 first stage debris on display in Farnborough, 2020</p>
             <a class="image-source" href="https://x.com/Skyrora_Ltd/status/1235246859620356097" target="_blank">
           source</a>
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/skyroradebris.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/skyroradebris.png"></a>
+        <li class="image-item" data-file="skyroradebris.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
-            <p class="image-description">R2 first stage debris on display in Farnborough, 2020</p>
+            <p class="image-description">R3 first stage debris on display in Farnborough, 2020</p>
             <a class="image-source" href="https://airsciences.org.uk/temporary-exhibits/" target="_blank">
           source</a>
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/skyroradebrisclose.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/skyroradebrisclose.png"></a>
+        <li class="image-item" data-file="skyroradebrisclose.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
-            <p class="image-description">R2 first stage debris on display in Farnborough, 2020</p>
+            <p class="image-description">R3 first stage debris on display in Farnborough, 2020</p>
             <a class="image-source" href="https://www.bbc.co.uk/news/science-environment-57758410" target="_blank">
           source</a>
           </div> 
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/skyroradebrisfar.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/skyroradebrisfar.png"></a>
+        <li class="image-item" data-file="skyroradebrisfar.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
-            <p class="image-description">R2 first stage debris on display in Farnborough, 2020</p>
+            <p class="image-description">R3 first stage debris on display in Farnborough, 2020</p>
             <a class="image-source" href="https://airsciences.org.uk/temporary-exhibits/" target="_blank">
           source</a>
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/skyroradebrisfurther.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/skyroradebrisfurther.png"></a>
+        <li class="image-item" data-file="skyroradebrisfurther.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
-            <p class="image-description">R2 first stage debris on display in Farnborough, 2020</p>
+            <p class="image-description">R3 first stage debris on display in Farnborough, 2020</p>
             <a class="image-source" href="https://x.com/Skyrora_Ltd/status/1235246859620356097" target="_blank">
           source</a>
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/highdowntestno.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/highdowntestno.png"></a>
+        <li class="image-item" data-file="highdowntestno.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R0 within one of the gantries at High Down, 1969</p>
             <a class="image-source" href="https://journal.sciencemuseum.ac.uk/article/black-arrow-r4-the-object-behind-the-screen/#text-2" target="_blank">
@@ -320,9 +320,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/highdowntest.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/highdowntest.png"></a>
+        <li class="image-item" data-file="highdowntest.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R0 test fire at High Down, 1969</p>
             <a class="image-source" href="https://cargocollective.com/ORBIT-OFFSITE_DOWLATSHAHI/Gantries" target="_blank">
@@ -330,9 +330,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/debrisreturnlorry.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/debrisreturnlorry.png"></a>
+        <li class="image-item" data-file="debrisreturnlorry.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R3 first stage debris in a lorry, 2019</p>
             <a class="image-source" href="https://www.smithsonianmag.com/air-space-magazine/return-black-arrow-180972959/" target="_blank">
@@ -340,19 +340,19 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/debrisreturnoutside.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/debrisreturnoutside.png"></a>
+        <li class="image-item" data-file="debrisreturnoutside.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
-            <p class="image-description">R2 first stage debris outside the Scottish Parliament, 2019</p>
+            <p class="image-description">R2 and R3 first stage debris outside the Scottish Parliament, 2019</p>
             <a class="image-source" href="https://www.smithsonianmag.com/air-space-magazine/return-black-arrow-180972959/" target="_blank">
           source</a>
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r2aus.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r2aus.png"></a>
+        <li class="image-item" data-file="r2aus.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R2 moments after launch, 1970</p>
             <a class="image-source" href="https://x.com/AusSpaceAgency/status/1235011772651671552" target="_blank">
@@ -360,9 +360,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/debrisreturn.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/debrisreturn.png"></a>
+        <li class="image-item" data-file="debrisreturn.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R3 debris being moved in Scotland, 2019</p>
             <a class="image-source" href="https://eandt.theiet.org/2019/01/21/uks-first-rocket-returning-home-after-48-years" target="_blank">
@@ -370,9 +370,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/debrisreturnclose.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/debrisreturnclose.png"></a>
+        <li class="image-item" data-file="debrisreturnclose.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">Rear section of R3 first stage debris in Scotland, 2019</p>
             <a class="image-source" href="https://eandt.theiet.org/2019/01/21/uks-first-rocket-returning-home-after-48-years" target="_blank">
@@ -380,9 +380,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3debris.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3debris.png"></a>
+        <li class="image-item" data-file="r3debris.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R3 first stage debris on display in Australia, 2007</p>
             <a class="image-source" href="https://commons.wikimedia.org/wiki/Category:Black_Arrow_R3#" target="_blank">
@@ -390,19 +390,19 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/debriswarehouse.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/debriswarehouse.png"></a>
+        <li class="image-item" data-file="debriswarehouse.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
-            <p class="image-description">R2(?) debris leaving a warehouse in Edinburgh, 2020</p>
+            <p class="image-description">R2 and R3 first stage debris leaving a warehouse in Edinburgh, 2020</p>
             <a class="image-source" href="https://x.com/BishopsMove_/status/1222822465094725632" target="_blank">
           source</a>
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r2launchorange.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r2launchorange.png"></a>
+        <li class="image-item" data-file="r2launchorange.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R2 moments after launch, 1970</p>
             <a class="image-source" href="https://www.reddit.com/r/HistoryPorn/comments/2kl7g5/the_prospero_satellite_is_launched_into_low_earth/" target="_blank">
@@ -410,9 +410,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r2launch.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r2launch.png"></a>
+        <li class="image-item" data-file="r2launch.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R2 moments after launch, 1970</p>
             <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
@@ -420,9 +420,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r2launchthree.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r2launchthree.png"></a>
+        <li class="image-item" data-file="r2launchthree.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R2 launch images in sequence, 1970</p>
             <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
@@ -430,9 +430,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3launchcolourcap.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3launchcolourcap.png"></a>
+        <li class="image-item" data-file="r3launchcolourcap.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R3 moments after launch, 1971</p>
             <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
@@ -440,9 +440,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3launchnowiki.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3launchnowiki.png"></a>
+        <li class="image-item" data-file="r3launchnowiki.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R3 moments after launch, 1971</p>
             <a class="image-source" href="https://humanoidhistory.tumblr.com/image/179529490765" target="_blank">
@@ -450,9 +450,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3modelmuseum.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3modelmuseum.png"></a>
+        <li class="image-item" data-file="r3modelmuseum.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R3 replica at the Wight Aviation Museum, 2021</p>
             <a class="image-source" href="https://onthewight.com/wight-aviation-museum-hear-the-real-stories-of-isle-of-wight-aviators-at-grand-opening/" target="_blank">
@@ -460,9 +460,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3modelbuildings.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3modelbuildings.png"></a>
+        <li class="image-item" data-file="r3modelbuildings.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R3 replica at the Wight Aviation Museum, 2021</p>
             <a class="image-source" href="https://onthewight.com/replica-black-arrow-launched-at-50th-anniversary-event-watch-on-tv/" target="_blank">
@@ -470,9 +470,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3modelbuildings.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3modelpeople.png"></a>
+        <li class="image-item" data-file="r3modelpeople.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R3 replica at the Wight Aviation Museum, 2021</p>
             <a class="image-source" href="https://onthewight.com/replica-black-arrow-launched-at-50th-anniversary-event-watch-on-tv/" target="_blank">
@@ -480,9 +480,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3launchlowrev.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3launchlowrev.png"></a>
+        <li class="image-item" data-file="r3launchlowrev.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R3 moments after launch (reversed), 1971</p>
             <a class="image-source" href="https://www.telegraph.co.uk/science/2019/01/21/britains-satellite-launching-rocket-go-display-48-years-desert/" target="_blank">
@@ -490,9 +490,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3launchclear.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3launchclear.png"></a>
+        <li class="image-item" data-file="r3launchclear.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R3 moments after launch, 1971</p>
             <a class="image-source" href="https://journal.sciencemuseum.ac.uk/article/black-arrow-r4-the-object-behind-the-screen/#text-2" target="_blank">
@@ -500,9 +500,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r0launch.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r0launch.png"></a>
+        <li class="image-item" data-file="r0launch.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R0 moments after launch, 1969</p>
             <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
@@ -510,9 +510,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r0flight.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r0flight.png"></a>
+        <li class="image-item" data-file="r0flight.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R0 in flight, 1969</p>
             <a class="image-source" href="https://ia804503.us.archive.org/13/items/a-vertical-empire-british-rocketry-programe_202107/A%20Vertical%20Empire%20-%20British%20rocketry%20Programe.pdf" target="_blank">
@@ -520,9 +520,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r2padnofairingclear.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r2padnofairingclear.png"></a>
+        <li class="image-item" data-file="r2padnofairingclear.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R2 on the pad with the X2 payload visible, 1970</p>
             <a class="image-source" href="https://web.archive.org/web/20190306162804/http://www.b14643.de/Spacerockets_1/West_Europe/BlackArrow/Gallery/Arrow_5big.jpg" target="_blank">
@@ -530,9 +530,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r2padnofairingclearwide.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r2padnofairingclearwide.png"></a>
+        <li class="image-item" data-file="r2padnofairingclearwide.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R2 on the pad with the X2 payload visible, 1970</p>
             <a class="image-source" href="https://web.archive.org/web/20220115085629/http://www.b14643.de/Spacerockets_1/West_Europe/BlackArrow/Description/Frame.htm" target="_blank">
@@ -540,9 +540,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r2padnofairing.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r2padnofairing.png"></a>
+        <li class="image-item" data-file="r2padnofairing.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R2 on the pad with the X2 payload visible, 1970</p>
             <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
@@ -550,9 +550,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r2padnofairingbw.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r2padnofairingbw.png"></a>
+        <li class="image-item" data-file="r2padnofairingbw.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R2 on the pad with the X2 payload visible, 1970</p>
             <a class="image-source" href="https://epizodsspace.airbase.ru/bibl/afan/bol-kk2006/03.html" target="_blank">
@@ -560,9 +560,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/x2fairingcloselow.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/x2fairingcloselow.png"></a>
+        <li class="image-item" data-file="x2fairingcloselow.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Close view of X2 and the instrument package on the pad, 1970</p>
             <a class="image-source" href="https://space.skyrocket.de/doc_sdat/r-2_instrument_package.htm" target="_blank">
@@ -570,9 +570,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/x2fairingclose.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/x2fairingclose.png"></a>
+        <li class="image-item" data-file="x2fairingclose.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Close view of X2 and the instrument package on the pad, 1970</p>
             <a class="image-source" href="https://web.archive.org/web/20220115085629/http://www.b14643.de/Spacerockets_1/West_Europe/BlackArrow/Description/Frame.htm" target="_blank">
@@ -580,9 +580,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3padnofairing.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3padnofairing.png"></a>
+        <li class="image-item" data-file="r3padnofairing.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R3 on the pad with the X3 payload visible, 1971</p>
             <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
@@ -590,9 +590,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r1launchsmall.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r1launchsmall.png"></a>
+        <li class="image-item" data-file="r1launchsmall.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R1 moments after launch, 1970</p>
             <a class="image-source" href="https://aventure-des-fusees-europa.blog4ever.com/articles/chronologie-de-la-cooperation-spatiale-europeenne" target="_blank">
@@ -600,9 +600,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r1launchcap.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r1launchcap.png"></a>
+        <li class="image-item" data-file="r1launchcap.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R1 moments after launch, 1970</p>
             <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
@@ -610,9 +610,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r1launchlow.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r1launchlow.png"></a>
+        <li class="image-item" data-file="r1launchlow.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R1 moments after launch, 1970</p>
             <a class="image-source" href="https://www.kozmo-data.sk/rakety/velka-britania/black-arrow/" target="_blank">
@@ -620,9 +620,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r1inflight.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r1inflight.png"></a>
+        <li class="image-item" data-file="r1inflight.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R1 in flight, 1970</p>
             <a class="image-source" href="https://space.skyrocket.de/doc_lau/black_arrow.htm" target="_blank">
@@ -630,9 +630,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3modelsky.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3modelsky.png"></a>
+        <li class="image-item" data-file="r3modelsky.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R3 replica at the Wight Aviation Museum, 2023</p>
             <a class="image-source" href="https://x.com/BSF42069/status/1831065312466460898/photo/2" target="_blank">
@@ -640,9 +640,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3modelbest.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3modelbest.png"></a>
+        <li class="image-item" data-file="r3modelbest.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R3 replica at the Wight Aviation Museum, 2023</p>
             <a class="image-source" href="https://x.com/BSF42069/status/1831071668015694291/photo/3" target="_blank">
@@ -650,9 +650,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3modelskirt.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3modelskirt.png"></a>
+        <li class="image-item" data-file="r3modelskirt.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">R3 replica's engine bay, 2023</p>
             <a class="image-source" href="https://x.com/BSF42069/status/1831071668015694291/photo/2" target="_blank">
@@ -660,9 +660,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/bamodelwoomera.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/bamodelwoomera.png"></a>
+        <li class="image-item" data-file="bamodelwoomera.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">Black Arrow replica in Woomera, 2003</p>
             <a class="image-source" href="https://www.flickr.com/photos/artq55/150021646/" target="_blank">
@@ -670,9 +670,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/bamodelwoomerafull.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/bamodelwoomerafull.png"></a>
+        <li class="image-item" data-file="bamodelwoomerafull.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">
             <p class="image-description">Black Arrow replica in Woomera, 2017</p>
             <a class="image-source" href="https://www.flickr.com/photos/paulroberts/37551410685/in/album-72157688978822504" target="_blank">
@@ -680,9 +680,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/launcharea5.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/launcharea5.png"></a>
+        <li class="image-item" data-file="launcharea5.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Launch Area 5 at the Woomera Test Range, 1967(?)</p>
             <a class="image-source" href="https://www.dst.defence.gov.au/sites/default/files/publications/documents/Fire%20Across%20the%20Desert%20HR.pdf" target="_blank">
@@ -690,9 +690,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3debrisbw.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3debrisbw.png"></a>
+        <li class="image-item" data-file="r3debrisbw.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R3 first stage debris on display in Australia, 2006(?)</p>
             <a class="image-source" href="https://epizodsspace.airbase.ru/bibl/afan/bol-kk2006/03.html" target="_blank">
@@ -700,9 +700,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3launchbw.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3launchbw.png"></a>
+        <li class="image-item" data-file="r3launchbw.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R3 moments after launch, 1971</p>
             <a class="image-source" href="https://epizodsspace.airbase.ru/bibl/afan/bol-kk2006/03.html" target="_blank">
@@ -710,9 +710,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r3launchbwcropped.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r3launchbwcropped.png"></a>
+        <li class="image-item" data-file="r3launchbwcropped.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R3 moments after launch, 1971</p>
             <a class="image-source" href="https://books.google.co.uk/books?id=eszSE5VGvuMC&lpg=PA82&pg=PA98#v=onepage&q&f=false" target="_blank">
@@ -720,9 +720,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/x1fairingbw.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/x1fairingbw.png"></a>
+        <li class="image-item" data-file="x1fairingbw.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">X1 payload within R1's fairing, 1970</p>
             <a class="image-source" href="https://web.archive.org/web/20031003140419/http://www.spaceuk.org/ba/ba.htm" target="_blank">
@@ -730,9 +730,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/x1fairingrightbw.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/x1fairingrightbw.png"></a>
+        <li class="image-item" data-file="x1fairingrightbw.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">X1 payload within R1's fairing, 1970</p>
             <a class="image-source" href="https://web.archive.org/web/20031003140419/http://www.spaceuk.org/ba/ba.htm" target="_blank">
@@ -740,9 +740,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/gamma8.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/gamma8.png"></a>
+        <li class="image-item" data-file="gamma8.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Gamma 8 engine, year(?)</p>
             <a class="image-source" href="https://web.archive.org/web/20031002092736/http://www.spaceuk.org/htp/htp.htm" target="_blank">
@@ -750,9 +750,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/gamma2.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/gamma2.png"></a>
+        <li class="image-item" data-file="gamma2.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Gamma 2 engine, year(?)</p>
             <a class="image-source" href="https://web.archive.org/web/20031002092736/http://www.spaceuk.org/htp/htp.htm" target="_blank">
@@ -760,9 +760,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/gamma2angle.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/gamma2angle.png"></a>
+        <li class="image-item" data-file="gamma2angle.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Gamma 2 engine, year(?)</p>
             <a class="image-source" href="https://web.archive.org/web/20190306162809/http://www.b14643.de/Spacerockets_1/West_Europe/BlackArrow/Gallery/gamma2_3big.jpg" target="_blank">
@@ -770,9 +770,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/gamma2top.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/gamma2top.png"></a>
+        <li class="image-item" data-file="gamma2top.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Gamma 2 engine, year(?)</p>
             <a class="image-source" href="https://web.archive.org/web/20190306162809/http://www.b14643.de/Spacerockets_1/West_Europe/BlackArrow/Gallery/Turbopump_big.jpg" target="_blank">
@@ -780,9 +780,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/waxwing.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/waxwing.png"></a>
+        <li class="image-item" data-file="waxwing.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Waxwing motor, year(?)</p>
             <a class="image-source" href="https://web.archive.org/web/20120207015413/http://www.skomer.u-net.com/projects/waxwing.htm" target="_blank">
@@ -790,9 +790,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/waxwingnonozzle.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/waxwingnonozzle.png"></a>
+        <li class="image-item" data-file="waxwingnonozzle.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Waxwing without its nozzle at the National Space Centre, year(?)</p>
             <a class="image-source" href="https://web.archive.org/web/20120207015413/http://www.skomer.u-net.com/projects/waxwing.htm" target="_blank">
@@ -800,9 +800,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/waxwingnonozzleangle.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/waxwingnonozzleangle.png"></a>
+        <li class="image-item" data-file="waxwingnonozzleangle.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Waxwing without its nozzle at the National Space Centre, 2009</p>
             <a class="image-source" href="https://en.wikipedia.org/wiki/Waxwing_(rocket_motor)#/media/File:Waxwing_engine.jpg" target="_blank">
@@ -810,9 +810,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/balaunchpropuk.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/balaunchpropuk.png"></a>
+        <li class="image-item" data-file="balaunchpropuk.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Black Arrow launch site proposals, year(?)</p>
             <a class="image-source" href="https://ia804503.us.archive.org/13/items/a-vertical-empire-british-rocketry-programe_202107/A%20Vertical%20Empire%20-%20British%20rocketry%20Programe.pdf" target="_blank">
@@ -820,9 +820,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/balaunchpropukwide.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/balaunchpropukwide.png"></a>
+        <li class="image-item" data-file="balaunchpropukwide.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Black Arrow launch site proposals, year(?)</p>
             <a class="image-source" href="https://www.bbc.co.uk/norfolk/your/extra/space2.shtml" target="_blank">
@@ -830,9 +830,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/balaunchpropukwow.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/balaunchpropukwow.png"></a>
+        <li class="image-item" data-file="balaunchpropukwow.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Black Arrow launch site proposals, year(?)</p>
             <a class="image-source" href="https://www.bbc.co.uk/news/uk-england-norfolk-37212780" target="_blank">
@@ -840,9 +840,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/stageinspection.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/stageinspection.png"></a>
+        <li class="image-item" data-file="stageinspection.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Black Arrow stages before shipment to Australia, year(?)</p>
             <a class="image-source" href="https://epizodsspace.airbase.ru/bibl/afan/bol-kk2006/03.html" target="_blank">
@@ -850,89 +850,89 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/farnboroughdebrisside.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/farnboroughdebrisside.png"></a>
+        <li class="image-item" data-file="farnboroughdebrisside.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
-            <p class="image-description">R2 first stage debris on display in Farnborough, 2021</p>
+            <p class="image-description">R3 first stage debris on display in Farnborough, 2021</p>
             <a class="image-source" href="https://x.com/EmlynSpace/status/1429460357047889924" target="_blank">
           source</a>
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/farnboroughdebrisinside.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/farnboroughdebrisinside.png"></a>
+        <li class="image-item" data-file="farnboroughdebrisinside.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
-            <p class="image-description">Inside view of the R2 first stage debris in Farnborough, 2021</p>
+            <p class="image-description">Inside view of the R3 first stage debris in Farnborough, 2021</p>
             <a class="image-source" href="https://x.com/EmlynSpace/status/1429461321930711050" target="_blank">
           source</a>
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/farnboroughdebrisfront.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/farnboroughdebrisfront.png"></a>
+        <li class="image-item" data-file="farnboroughdebrisfront.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
-            <p class="image-description">Front section of R2 first stage debris on display in Farnborough, 2021</p>
+            <p class="image-description">Front section of R3 first stage debris on display in Farnborough, 2021</p>
             <a class="image-source" href="https://x.com/EmlynSpace/status/1429460357047889924" target="_blank">
           source</a>
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/farnboroughdebrisbackside.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/farnboroughdebrisbackside.png"></a>
+        <li class="image-item" data-file="farnboroughdebrisbackside.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
-            <p class="image-description">Rear section of R2 first stage debris on display in Farnborough, 2021</p>
+            <p class="image-description">Rear section of R3 first stage debris on display in Farnborough, 2021</p>
             <a class="image-source" href="https://x.com/EmlynSpace/status/1429460357047889924" target="_blank">
           source</a>
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/farnboroughdebrisback.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/farnboroughdebrisback.png"></a>
+        <li class="image-item" data-file="farnboroughdebrisback.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
-            <p class="image-description">Rear section of R2 first stage debris on display in Farnborough, 2021</p>
+            <p class="image-description">Rear section of R3 first stage debris on display in Farnborough, 2021</p>
             <a class="image-source" href="https://x.com/EmlynSpace/status/1429460357047889924" target="_blank">
           source</a>
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/farnboroughdebrisbackclose.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/farnboroughdebrisbackclose.png"></a>
+        <li class="image-item" data-file="farnboroughdebrisbackclose.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
-            <p class="image-description">Rear section of R2 first stage debris on display in Farnborough, 2021</p>
+            <p class="image-description">Rear section of R3 first stage debris on display in Farnborough, 2021</p>
             <a class="image-source" href="https://x.com/EmlynSpace/status/1429461321930711050" target="_blank">
           source</a>
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/farnboroughdebrisengineside.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/farnboroughdebrisengineside.png"></a>
+        <li class="image-item" data-file="farnboroughdebrisengineside.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
-            <p class="image-description">Rear section of R2 first stage debris on display in Farnborough, 2021</p>
+            <p class="image-description">Rear section of R3 first stage debris on display in Farnborough, 2021</p>
             <a class="image-source" href="https://x.com/EmlynSpace/status/1429461321930711050" target="_blank">
           source</a>
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/farnboroughdebrisengine.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/farnboroughdebrisengine.png"></a>
+        <li class="image-item" data-file="farnboroughdebrisengine.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
-            <p class="image-description">Close view of the flattened engines on R2 first stage debris, 2021</p>
+            <p class="image-description">Close view of the flattened engines on R3 first stage debris, 2021</p>
             <a class="image-source" href="https://x.com/EmlynSpace/status/1429461321930711050" target="_blank">
           source</a>
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r1launchnational.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r1launchnational.png"></a>
+        <li class="image-item" data-file="r1launchnational.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R1 moments after launch, 1970</p>
             <a class="image-source" href="https://cargocollective.com/ORBIT-OFFSITE_DOWLATSHAHI/Prospero-Black-Arrow-Black-Knight" target="_blank">
@@ -940,9 +940,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r1launchbw.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r1launchbw.png"></a>
+        <li class="image-item" data-file="r1launchbw.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R1 moments after launch, 1970</p>
             <a class="image-source" href="https://universemagazine.com/ot-v-2-do-chernoj-strely-2/" target="_blank">
@@ -950,9 +950,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/gamma8bw.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/gamma8bw.png"></a>
+        <li class="image-item" data-file="gamma8bw.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Gamma 8 engine, year(?)</p>
             <a class="image-source" href="https://cargocollective.com/ORBIT-OFFSITE_DOWLATSHAHI/Prospero-Black-Arrow-Black-Knight" target="_blank">
@@ -960,9 +960,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/x3construction.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/x3construction.png"></a>
+        <li class="image-item" data-file="x3construction.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">X3 satellite under construction, year(?)</p>
             <a class="image-source" href="https://cargocollective.com/ORBIT-OFFSITE_DOWLATSHAHI/Prospero-Black-Arrow-Black-Knight" target="_blank">
@@ -970,9 +970,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/bamodelhighdown.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/bamodelhighdown.png"></a>
+        <li class="image-item" data-file="bamodelhighdown.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R3 and X3 models inside the New Battery on the Isle of Wight, year(?)</p>
             <a class="image-source" href="https://www.nationaltrustimages.org.uk/image/165172" target="_blank">
@@ -980,9 +980,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r0payloaddebris.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r0payloaddebris.png"></a>
+        <li class="image-item" data-file="r0payloaddebris.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Remains of the dummy payload that launched on R0, 1969</p>
             <a class="image-source" href="https://www.dst.defence.gov.au/sites/default/files/publications/documents/Fire%20Across%20the%20Desert%20HR.pdf" target="_blank">
@@ -990,9 +990,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/x3scimuseum.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/x3scimuseum.png"></a>
+        <li class="image-item" data-file="x3scimuseum.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">X3 flight spare on display in the Science Museum, 2012</p>
             <a class="image-source" href="https://en.wikipedia.org/wiki/Prospero_(spacecraft)#/media/File:Prospero_X-3_model_2012.JPG" target="_blank">
@@ -1000,9 +1000,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/x3scimuseumside.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/x3scimuseumside.png"></a>
+        <li class="image-item" data-file="x3scimuseumside.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">X3 flight spare on display in the Science Museum, year(?)</p>
             <a class="image-source" href="https://www.sciencemuseum.org.uk/objects-and-stories/pictures-black-arrow-rocket" target="_blank">
@@ -1010,9 +1010,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r4scimuseumold.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r4scimuseumold.png"></a>
+        <li class="image-item" data-file="r4scimuseumold.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R4 on display in the Science Museum, 1986</p>
             <a class="image-source" href="https://journal.sciencemuseum.ac.uk/article/black-arrow-r4-the-object-behind-the-screen/#main-body" target="_blank">
@@ -1020,9 +1020,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r4scimuseumnew.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r4scimuseumnew.png"></a>
+        <li class="image-item" data-file="r4scimuseumnew.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R4 on display in the Science Museum, 2000</p>
             <a class="image-source" href="https://journal.sciencemuseum.ac.uk/article/black-arrow-r4-the-object-behind-the-screen/#main-body" target="_blank">
@@ -1030,9 +1030,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r4scimuseumstage.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r4scimuseumstage.png"></a>
+        <li class="image-item" data-file="r4scimuseumstage.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R4 on display in the Science Museum, year(?)</p>
             <a class="image-source" href="https://www.sciencemuseum.org.uk/objects-and-stories/pictures-black-arrow-rocket#&gid=1&pid=1" target="_blank">
@@ -1040,9 +1040,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r4scimuseumimp.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r4scimuseumimp.png"></a>
+        <li class="image-item" data-file="r4scimuseumimp.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R4 on display in the Science Museum, year(?)</p>
             <a class="image-source" href="https://www.sciencemuseum.org.uk/objects-and-stories/pictures-black-arrow-rocket" target="_blank">
@@ -1050,9 +1050,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/gamma8sphere.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/gamma8sphere.png"></a>
+        <li class="image-item" data-file="gamma8sphere.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Gamma 8 engine, year(?)</p>
             <a class="image-source" href="https://www.sciencemuseum.org.uk/objects-and-stories/pictures-black-arrow-rocket" target="_blank">
@@ -1060,9 +1060,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/baholddownclamp.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/baholddownclamp.png"></a>
+        <li class="image-item" data-file="baholddownclamp.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">Black Arrow hold down clamp, year(?)</p>
             <a class="image-source" href="https://www.sciencemuseum.org.uk/objects-and-stories/pictures-black-arrow-rocket" target="_blank">
@@ -1070,9 +1070,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/x3surfaceexperiment.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/x3surfaceexperiment.png"></a>
+        <li class="image-item" data-file="x3surfaceexperiment.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">X3 thermal control experiment flight spares, year(?)</p>
             <a class="image-source" href="https://www.sciencemuseum.org.uk/objects-and-stories/pictures-black-arrow-rocket" target="_blank">
@@ -1080,9 +1080,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/x1fairing.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/x1fairing.png"></a>
+        <li class="image-item" data-file="x1fairing.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">X1 in position atop R1, 1970</p>
             <a class="image-source" href="https://www.dst.defence.gov.au/sites/default/files/publications/documents/Fire%20Across%20the%20Desert%20HR.pdf" target="_blank">
@@ -1090,9 +1090,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r1debris.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r1debris.png"></a>
+        <li class="image-item" data-file="r1debris.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R1 first stage debris, 1970</p>
             <a class="image-source" href="https://www.dst.defence.gov.au/sites/default/files/publications/documents/Fire%20Across%20the%20Desert%20HR.pdf" target="_blank">
@@ -1100,9 +1100,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r4scimuseumjeanback.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r4scimuseumjeanback.png"></a>
+        <li class="image-item" data-file="r4scimuseumjeanback.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R4 on display in the Science Museum, year(?)</p>
             <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
@@ -1110,9 +1110,9 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r4scimuseumjeanfront.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r4scimuseumjeanfront.png"></a>
+        <li class="image-item" data-file="r4scimuseumjeanfront.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R4 on display in the Science Museum, year(?)</p>
             <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
@@ -1120,18 +1120,40 @@
           </div>
         </li>
 
-        <li class="image-item">
-          <a class="image-link" href="/assets/bagallery/r4scimuseumjeanside.png" target="_blank">
-            <img class="image-content" draggable="false" src="/assets/bagallery/r4scimuseumjeanside.png"></a>
+        <li class="image-item" data-file="r4scimuseumjeanside.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
           <div class="image-textbox">  
             <p class="image-description">R4 on display in the Science Museum, year(?)</p>
             <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
           source</a>
           </div>
         </li>
+
+        <li class="image-item" data-file="x3scimuseumsat.png">
+          <a class="image-link" target="_blank">
+            <img class="image-content" draggable="false"></a>
+          <div class="image-textbox">  
+            <p class="image-description">X3 flight spare on display in the Science Museum, year(?)</p>
+            <a class="image-source" href="http://www.capcomespace.net/dossiers/espace_europeen/ELDO_europa/black_arrow.htm" target="_blank">
+          source</a>
+          </div>
+        </li>
+
+
 
       </ul>
     </div>
+
+    <script>
+      document.querySelectorAll('.image-item').forEach(item => {
+        const file = item.dataset.file;
+        const path = `/assets/bagallery/${file}`;
+
+        item.querySelector('.image-link').href = path;
+        item.querySelector('.image-content').src = path;
+      });
+    </script>
 
     <script class="side-bar-toggle-script" src="/atexternal/javascript/sbtoggle.js"></script>
     <script class="button-sound-script" src="/atexternal/javascript/buttonsfx.js"></script>

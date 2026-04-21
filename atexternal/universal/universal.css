@@ -64,14 +64,15 @@ p {
  box-shadow: 2px 0px 10px 1px #3f3f3f;
 }
 .logo {
- scale: 1.5;
+ scale: 0.9;
  width: 100%;
  margin: 5px;
  margin-top: 10px;
+ margin-bottom: 0px;
  opacity: 100%;
 }
 .logo:hover {
-  transform: rotate(1deg);
+  transform: rotate(5deg)
 }
 .navigation-title, .social-title {
   background: linear-gradient(to bottom, #ffffff33, #ffffff11),
@@ -99,7 +100,7 @@ p {
 button {
   -webkit-tap-highlight-color: transparent;
 }
-.home, .black-arrow-archive, .chance-counter, .prospero-tracker, .refund-the-world, .odds-submit, .counter-clear, .all-clear {
+.home, .black-arrow-archive, .chance-counter, .prospero-tracker, .background-music, .refund-the-world, .odds-submit, .counter-clear, .all-clear {
   background: linear-gradient(to bottom, #ffffff33, #ffffff11),
   linear-gradient(to bottom, #ffffff 50%, #c2c2c2 100%);
   border-style: solid;
