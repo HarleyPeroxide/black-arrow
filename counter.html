@@ -1,9 +1,16 @@
+---
+permalink: /counter/
+---
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
   <head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chance Counter | woomera.space</title>
+    <meta name="description" content="A tool for counting attempts and working out the odds of an event happening.">
+    <link rel="icon" href="/assets/2026logoarial.svg" type="image/svg+xml">
+    {% include stats.html %}
 
     <link rel="stylesheet" href="/atexternal/universal/universal.css">
 
@@ -48,25 +55,7 @@
   </head>
   <body>
 
-    <div class="side-bar">
-      <img class="logo" draggable="false" onclick="location.href = '/';" src="/assets/2026logoarial.svg">
-      <p class="navigation-title">NAVIGATION</p>
-      <div class="navigation-items">
-        <button class="home" onclick="location.href = '/';">HOME</button>
-        <button class="black-arrow-archive" onclick="location.href = '/black-arrow-archive/';">BLACK ARROW</button>
-        <button class="prospero-tracker" onclick="location.href = '/protracker/';">PROSPERO TRACKER</button>
-        <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="chance-counter" onclick="location.href = '/counter/';">CHANCE COUNTER</button>
-      </div>
-      <p class="social-title">CONTACT</p>
-      <div class="social-items">
-        <form>
-
-        </form>
-      </div>
-      <div class="year-sidebar">
-        <p class="year-actual">2024-2026</p>
-      </div>
-    </div>
+    {% include sidebar.html %}
 
     <div></div>
 

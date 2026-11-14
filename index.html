@@ -1,9 +1,15 @@
+---
+---
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
   <head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | woomera.space</title>
+    <meta name="description" content="Home page for woomera.space, hosting an intro and a list of upcoming features.">
+    <link rel="icon" href="/assets/2026logoarial.svg" type="image/svg+xml">
+    {% include stats.html %}
 
     <link rel="stylesheet" href="/atexternal/universal/universal.css">
 
@@ -20,7 +26,6 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        backdrop-filter: blur(0px);
       }
       @media all and (max-width: 550px) {
         body {
@@ -38,7 +43,7 @@
       }
       .content-grid {
         display: grid;
-        grid-template-areas: "header" "intro" "content" "footer";
+        grid-template-areas: "header" "navigation" "intro" "content" "footer";
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
         box-shadow: 0px 4px 10px 1px #3f3f3f;
@@ -48,26 +53,34 @@
         border-width: 2px;
       }
       .content-grid .header {
-        grid-area: "header";
+        grid-area: header;
         display: flex;
         min-width: 0;
         justify-content: center;
+        flex-direction: column;
         background: linear-gradient(to bottom, #ffffff33, #ffffff11),
         linear-gradient(to bottom, #7fd0ff 25%, #198fd3 75%);
-        background: farthest-corner at bottom center, white, transparent;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         border-bottom-width: 1px;
       }
+      .content-grid .navigation {
+        background: linear-gradient(to bottom, #ffffff33, #ffffff11),
+        linear-gradient(to bottom, #b4202a 50%, #691016 100%);
+        grid-area: navigation;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+      }
+
       .content-grid .intro {
         background: linear-gradient(to bottom, #ffffff33, #ffffff11),
         linear-gradient(to bottom, #ffffff 50%, #c2c2c2 100%);
-        grid-area: "intro";
+        grid-area: intro;
         border-top-width: 1px;
         border-bottom-width: 1px;
       }
       .content-grid .content {
-        grid-area: "content";
+        grid-area: content;
         display: grid;
         grid-template-columns: auto auto;
         border-top-width: 1px;
@@ -75,7 +88,7 @@
         gap: 2px;
       }
       .content-grid .footer {
-        grid-area: "footer";
+        grid-area: footer;
       }
 
       #interests, #date-time {
@@ -83,30 +96,33 @@
         linear-gradient(to bottom, #ffffff 50%, #c2c2c2 100%);
       }
 
+      .horizontal-nav-items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .horizontal-nav-items a {
+        flex: 1 1 0;
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        border-right: 2px solid black;
+      }
+
+      .horizontal-nav-items a:last-child {
+        border-right: none;
+}
+
     </style>
 
   </head>
   <body>
 
-    <div class="side-bar">
-      <img class="logo" draggable="false" onclick="location.href = '/';" src="/assets/2026logoarial.svg">
-      <p class="navigation-title">NAVIGATION</p>
-      <div class="navigation-items">
-        <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="home" onclick="location.href = '/';">HOME</button>
-        <button class="black-arrow-archive" onclick="location.href = '/black-arrow-archive/';">BLACK ARROW</button>
-        <button class="prospero-tracker" onclick="location.href = '/protracker/';">PROSPERO TRACKER</button>
-        <button class="chance-counter" onclick="location.href = '/counter/';">CHANCE COUNTER</button>
-      </div>
-      <p class="social-title">CONTACT</p>
-      <div class="social-items">
-        <form>
-
-        </form>
-      </div>
-      <div class="year-sidebar">
-        <p class="year-actual">2024-2026</p>
-      </div>
-    </div>
+    {% include sidebar.html %}
 
     <div></div>
 
@@ -124,9 +140,18 @@
         <h1 style="text-align: center; margin: 5px; margin-top: 8%; margin-bottom: 8%;">Welcome to woomera.space</h1>
         </div>
 
+        <div class="navigation">
+          <nav class="horizontal-nav-items">
+            <a href="/black-arrow-archive/index.html">Black Arrow Archive</a>
+            <a href="/black-arrow-archive/index.html">Black Arrow Archive</a>
+            <a href="/black-arrow-archive/index.html">Black Arrow Archive</a>
+            <a href="/black-arrow-archive/index.html">Black Arrow Archive</a>
+          </nav>
+        </div>
+
         <div class="intro">
           <h3>This website is mainly intended to support my detailed archive for Black Arrow. Other tools and interests may also be included. This is a work-in-progress passion project, everything is subject to change! 
-          </h23>
+          </h3>
         </div>
 
         <div class="content">

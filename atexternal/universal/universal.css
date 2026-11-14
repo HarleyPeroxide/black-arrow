@@ -10,7 +10,7 @@ p {
  margin-right: 5px;
 }
 @media (hover: hover) and (pointer: fine) {
-  button:hover:not(.side-bar-toggle) {
+  button:hover:not(.side-bar-toggle), .navigation-button:hover {
   transform: scale(1.05);
   border-color: #42d7e2;
   }
@@ -100,7 +100,7 @@ p {
 button {
   -webkit-tap-highlight-color: transparent;
 }
-.home, .black-arrow-archive, .chance-counter, .prospero-tracker, .background-music, .refund-the-world, .odds-submit, .counter-clear, .all-clear {
+.background-music, .refund-the-world, .odds-submit, .counter-clear, .all-clear {
   background: linear-gradient(to bottom, #ffffff33, #ffffff11),
   linear-gradient(to bottom, #ffffff 50%, #c2c2c2 100%);
   border-style: solid;
@@ -111,6 +111,27 @@ button {
   color: black;
   width: 90%;
   margin: 2px;
+}
+.navigation-button {
+  background: linear-gradient(to bottom, #ffffff33, #ffffff11), linear-gradient(to bottom, #ffffff 50%, #c2c2c2 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #c7c7c7;
+  border-radius: 4px;
+  color: black;
+  width: 90%;
+  margin: 2px;
+  display: block;
+  padding: 1px 6px;
+  font-size: 13.333px;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+.navigation-button.current {
+  background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%);
+  border-color: #42d7e2;
 }
 .social-items form  {
  display: flex;
@@ -143,11 +164,11 @@ button {
 }
 .year-sidebar {
  display: inline-block;
- position: fixed;
+ position: relative;
  text-align: center;
  height: 50px;
  width: 80px;
- bottom: 0;
+ margin-top: auto;
 }
 .main-content-area {
   text-align: justify;

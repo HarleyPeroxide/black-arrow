@@ -1,9 +1,16 @@
+---
+permalink: /black-arrow-archive/
+---
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
   <head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Intro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Black Arrow Archive | woomera.space</title>
+    <meta name="description" content="An introduction to Black Arrow, the British rocket that launched the Prospero satellite in 1971, and a guide to this archive.">
+    <link rel="icon" href="/assets/2026logoarial.svg" type="image/svg+xml">
+    {% include stats.html %}
 
     <link rel="stylesheet" href="/atexternal/universal/universal.css">
     <link rel="stylesheet" href="/atexternal/universal/bauniversal.css">
@@ -24,30 +31,7 @@
   </head>
   <body>
 
-    <div class="side-bar">
-      <img class="logo" draggable="false" onclick="location.href = '/';" src="/assets/2026logoarial.svg">
-      <p class="navigation-title">NAVIGATION</p>
-      <div class="navigation-items">
-        <button class="home" onclick="location.href = '/';">HOME</button>
-        <button style="background: linear-gradient(to bottom, #ffffff 50%, #42a7e2 100%); border-color: #42d7e2;" class="intro" onclick="location.href = '/black-arrow-archive/';">INTRO</button>
-        <button class="launch" onclick="location.href = 'launch';">LAUNCHES</button>
-        <button class="payload" onclick="location.href = 'payload';">PAYLOADS</button>
-        <button class="vehicle" onclick="location.href = 'vehicle';">VEHICLE</button>
-        <button class="gallery" onclick="location.href = 'gallery';">GALLERY</button>
-        <button class="vehicle" onclick="location.href = 'video';">VIDEO</button>
-        <button class="prospero-tracker" onclick="location.href = '/protracker/';">PROSPERO TRACKER</button>
-        <button class="chance-counter" onclick="location.href = '/counter/';">CHANCE COUNTER</button>
-      </div>
-      <p class="social-title">CONTACT</p>
-      <div class="social-items">
-        <form>
-
-        </form>
-      </div>
-      <div class="year-sidebar">
-        <p class="year-actual">2024-2026</p>
-      </div>
-    </div>
+    {% include sidebar.html %}
 
     <div></div>
 

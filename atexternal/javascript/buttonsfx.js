@@ -3,8 +3,7 @@ function playButtonSound() {
   audio.play();
 }
 
-document.querySelectorAll("button:not(.side-bar-toggle").forEach(btn => {
+document.querySelectorAll("button:not(.side-bar-toggle), .navigation-button").forEach(btn => {
   btn.addEventListener("mouseenter", playButtonSound);
 
 });
-
